@@ -8,6 +8,6 @@ public class wewew {
 
 		System.out.println("d2=" +d2);
 		System.out.println("d2==d1=>" +(d2==d1));
-//		ћятћря
+//		
 		
 	}}

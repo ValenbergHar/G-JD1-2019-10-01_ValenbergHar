@@ -11,6 +11,7 @@ public class Primitive {
 		
 	}
 	public static void badSwap (int a, int b) {
+//		эти переменные не связаны, потому что они примитивные
 		final int temp = a;
 		a=b;
 		b=temp;
