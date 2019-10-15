@@ -38,6 +38,7 @@ public class Practice {
 		int bignum = numbers[0];
 		int smallnum = numbers[0];
 		int big = 0, small = 0;
+		
 		for (int i = 0; i < mas.length; i++) {
 		small = i;
 		smallnum = (mas[i] + "").length();
@@ -45,6 +46,10 @@ public class Practice {
 
 		for (int i = 0; i > mas.length; i++) {
 		big = i;
+		
+		String str = Integer.toString(mas[i]);
+		int maxlength = str.length();
+		
 		bignum = (mas[i] + "").length();
 		}
 		System.out.printf("Меньшее число: %d, количество цифр: %d", mas[big], bignum);
