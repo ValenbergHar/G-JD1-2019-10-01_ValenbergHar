@@ -74,8 +74,7 @@ public class Practice2 {
 
 	public static void compact(double[][] workArray) {
 		int N = 5;
-		int[][] a = { { 1, 0, 3, 4, 5 }, { 0, 0, 0, 0, 0 }, 
-				{ 1, 0, 3, 5, 6 }, { 0, 0, 0, 5, 0 }, { 1, 0, 1, 1, 1 } };
+		int[][] a = { { 1, 0, 3, 4, 5 }, { 0, 0, 0, 0, 0 }, { 1, 0, 3, 5, 6 }, { 0, 0, 0, 5, 0 }, { 1, 0, 1, 1, 1 } };
 		boolean p = false;
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
@@ -181,41 +180,40 @@ public class Practice2 {
 				sum = sum + (int) workArray[i][j];
 				aver = sum / n;
 				int k = (int) workArray[i][j] - aver;
-				System.out.print(sum);
+				System.out.print(k+ " ");
 			}
 			System.out.println();
 		}
 	}
 
 	public static void sum(double[][] workArray, int n) {
+		int indexStart = 0;
+		int indexEnd = 0;
 
 		for (int i = 0; i < n; i++) {
-			int indexStart = 0;
+
 			for (int j = 0; j < n; j++) {
 				if (workArray[i][j] > 0) {
 					indexStart = j;
 
 					break;
-
 				}
-
 			}
-			System.out.println(indexStart + " ");
 		}
 
 		for (int i = 0; i < n; i++) {
-			int indexEnd = 0;
 			for (int j = n - 1; j < indexStart; j++) {
 				if (workArray[i][j] > 0) {
 					indexEnd = j;
 					break;
 				}
 			}
-			System.out.println(indexEnd);
-		}
+
+		}int sum1 = 0;
 		for (int i = 0; i < n; i++) {
-			int sum1 = 0;
+			
 			for (int j = indexStart + 1; j < indexEnd; j++)
+
 				sum1 = sum1 + (int) workArray[i][j];
 			System.out.println(sum1);
 
