@@ -17,21 +17,21 @@ public class Practice2 {
 			}
 			System.out.println();
 		}
-//		System.out.println("____________________");
-//		roundall(workArray, n);
-//		System.out.println("____________________");
-//		delete(workArray, n);
-//		System.out.println("____________________");
-//		compact(workArray);
-//		System.out.println("____________________");
-//		regularize(workArray, n);
-//		System.out.println("____________________");
-//		averagemin(workArray, n);
-//		System.out.println("____________________");
+		System.out.println("____________________");
+		roundall(workArray, n);
+		System.out.println("____________________");
+		delete(workArray, n);
+		System.out.println("____________________");
+		compact(workArray);
+		System.out.println("____________________");
+		regularize(workArray, n);
+		System.out.println("____________________");
+		averagemin(workArray, n);
+		System.out.println("____________________");
 		sum(workArray, n);
 		System.out.println("____________________");
-//		transp(workArray, n);
-//		System.out.println("____________________");
+		transp(workArray, n);
+		System.out.println("____________________");
 
 	}
 
@@ -46,7 +46,6 @@ public class Practice2 {
 	}
 
 	public static void delete(double[][] workArray, int n) {
-		// выполняется не полностью
 		int[][] matrix_res = new int[n - 1][n - 1];
 		int max = 0;
 		int row = 0;
@@ -75,7 +74,8 @@ public class Practice2 {
 
 	public static void compact(double[][] workArray) {
 		int N = 5;
-		int[][] a = { { 1, 0, 3, 4, 5 }, { 0, 0, 0, 0, 0 }, { 1, 0, 3, 5, 6 }, { 0, 0, 0, 5, 0 }, { 1, 0, 1, 1, 1 } };
+		int[][] a = { { 1, 0, 3, 4, 5 }, { 0, 0, 0, 0, 0 }, 
+				{ 1, 0, 3, 5, 6 }, { 0, 0, 0, 5, 0 }, { 1, 0, 1, 1, 1 } };
 		boolean p = false;
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
@@ -173,7 +173,6 @@ public class Practice2 {
 	}
 
 	public static void averagemin(double[][] workArray, int n) {
-		// хз што робіць
 
 		for (int i = 0; i < n; i++) {
 			int sum = 0;
@@ -190,39 +189,38 @@ public class Practice2 {
 
 	public static void sum(double[][] workArray, int n) {
 
-		int indexEnd = 0;
-	
-			for (int i = 0; i < n; i++) {
-				int indexStart = 0;
-					for (int j = 0; j <workArray[i].length ; j++) {
-						if (workArray[i][j]> 0) {
-					indexStart = i;
-					
+		for (int i = 0; i < n; i++) {
+			int indexStart = 0;
+			for (int j = 0; j < n; j++) {
+				if (workArray[i][j] > 0) {
+					indexStart = j;
+
 					break;
-					
+
 				}
-							
+
 			}
-			System.out.println(indexStart);
+			System.out.println(indexStart + " ");
 		}
-		
 
-//		for (int i = indexStart + 1; i > indexStart; i++) {
-//			if (workArray[i] > 0) {
-//				indexEnd = i;
-//				break;
-//			}
-//		}
-//
-//		int sum = 0;
-//
-//		for (int i = indexStart + 1; i < indexEnd; i++)
-//			sum += workArray[i];
-//
-//		System.out.println(sum);// выведет 0, если индексы были равны.
+		for (int i = 0; i < n; i++) {
+			int indexEnd = 0;
+			for (int j = n - 1; j < indexStart; j++) {
+				if (workArray[i][j] > 0) {
+					indexEnd = j;
+					break;
+				}
+			}
+			System.out.println(indexEnd);
+		}
+		for (int i = 0; i < n; i++) {
+			int sum1 = 0;
+			for (int j = indexStart + 1; j < indexEnd; j++)
+				sum1 = sum1 + (int) workArray[i][j];
+			System.out.println(sum1);
+
+		}
 	}
-
-	
 
 	public static void transp(double[][] workArray, int n) {
 		for (int i = 0; i < n; i++) {
