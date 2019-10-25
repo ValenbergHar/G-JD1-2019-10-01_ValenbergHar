@@ -17,25 +17,29 @@ public class Practice2 {
 			}
 			System.out.println();
 		}
-		System.out.println("____________________");
-		roundall(workArray, n);
-		System.out.println("____________________");
-		delete(workArray, n);
-		System.out.println("____________________");
-		compact(workArray);
-		System.out.println("____________________");
-		regularize(workArray, n);
-		System.out.println("____________________");
-		averagemin(workArray, n);
-		System.out.println("____________________");
-		sum(workArray, n);
-		System.out.println("____________________");
-		transp(workArray, n);
-		System.out.println("____________________");
+		makeLine();
+		findRoundAll(workArray, n);
+		makeLine();
+		findDelete(workArray, n);
+		makeLine();
+		findCompact(workArray);
+		makeLine();
+		findRegularize(workArray, n);
+		makeLine();
+		findAverageMin(workArray, n);
+		makeLine();
+		findSum(workArray, n);
+		makeLine();
+		findTransp(workArray, n);
+		makeLine();
 
 	}
+	
+	private static void makeLine() {
+		System.out.println("\n__________________");
+	}
 
-	public static void roundall(double[][] workArray, int n) {
+	public static void findRoundAll(double[][] workArray, int n) {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				workArray[i][j] = Math.round(workArray[i][j]);
@@ -45,7 +49,7 @@ public class Practice2 {
 		}
 	}
 
-	public static void delete(double[][] workArray, int n) {
+	public static void findDelete(double[][] workArray, int n) {
 		int[][] matrix_res = new int[n - 1][n - 1];
 		int max = 0;
 		int row = 0;
@@ -72,9 +76,10 @@ public class Practice2 {
 		}
 	}
 
-	public static void compact(double[][] workArray) {
+	public static void findCompact(double[][] workArray) {
 		int N = 5;
-		int[][] a = { { 1, 0, 3, 4, 5 }, { 0, 0, 0, 0, 0 }, { 1, 0, 3, 5, 6 }, { 0, 0, 0, 5, 0 }, { 1, 0, 1, 1, 1 } };
+		int[][] a = { { 1, 0, 3, 4, 5 }, { 0, 0, 0, 0, 0 }, 
+				{ 1, 0, 3, 5, 6 }, { 0, 0, 0, 5, 0 }, { 1, 0, 1, 1, 1 } };
 		boolean p = false;
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
@@ -122,7 +127,7 @@ public class Practice2 {
 		}
 	}
 
-	public static void regularize(double[][] workArray, int n) {
+	public static void findRegularize(double[][] workArray, int n) {
 		int k = 1 + (int) (Math.random() * ((n - 1)));
 		System.out.printf("column or row: %d", k);
 		k--;
@@ -171,7 +176,7 @@ public class Practice2 {
 
 	}
 
-	public static void averagemin(double[][] workArray, int n) {
+	public static void findAverageMin(double[][] workArray, int n) {
 
 		for (int i = 0; i < n; i++) {
 			int sum = 0;
@@ -186,7 +191,7 @@ public class Practice2 {
 		}
 	}
 
-	public static void sum(double[][] workArray, int n) {
+	public static void findSum(double[][] workArray, int n) {
 		int indexStart = 0;
 		int indexEnd = 0;
 
@@ -222,7 +227,7 @@ public class Practice2 {
 		}
 	}
 
-	public static void transp(double[][] workArray, int n) {
+	public static void findTransp(double[][] workArray, int n) {
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j < n; j++) {
 				int temp = (int) workArray[i][j];

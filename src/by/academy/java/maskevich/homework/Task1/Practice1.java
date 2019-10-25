@@ -6,11 +6,11 @@ public class Practice1 {
 	public static void main(String[] args) {
 		System.out.print("Number of digits: ");
 		Scanner in = new Scanner(System.in);
-		int kolich = in.nextInt();
-		int mas[] = new int[kolich];
-		int numbers[] = new int[kolich];
+		int k = in.nextInt();
+		int mas[] = new int[k];
+		int numbers[] = new int[k];
 		System.out.print("Enter numbers: ");
-		for (int i = 0; i < kolich; i++) {
+		for (int i = 0; i < k; i++) {
 			mas[i] = in.nextInt();
 			numbers[i] = (mas[i] + "").length();
 		}
@@ -18,23 +18,29 @@ public class Practice1 {
 		for (int i = 0; i < mas.length; i++) {
 			System.out.print(mas[i] + " ");
 		}
-		System.out.println("\n__________________");
-		numbersLength(mas, numbers, kolich);
-		System.out.println("\n__________________");
-		numbersAverage(mas, numbers, kolich);
-		System.out.println("\n__________________");
-		numberEven(mas);
-		System.out.println("\n__________________");
-		dividethreefive(mas);
-		System.out.println("\n__________________");
-		primenumbers(mas);
-		System.out.println("\n__________________");
-		ascendingorder(mas, numbers, kolich);
-		System.out.println("\n__________________");
-		polindrom(mas, numbers, kolich);
+
+		makeLine();
+		findnumbersLength(mas, numbers, k);
+		makeLine();
+		findnumbersAverage(mas, numbers, k);
+		makeLine();
+		findnumberEven(mas);
+		makeLine();
+		finddividethreefive(mas);
+		makeLine();
+		findprimeNumbers(mas);
+		makeLine();
+		findascenDingorder(mas, numbers, k);
+		makeLine();
+		findPolindrom(mas, numbers, k);
+
 	}
 
-	private static void numbersLength(int[] mas, int[] numbers, int kolich) {
+	private static void makeLine() {
+		System.out.println("\n__________________");
+	}
+
+	private static void findnumbersLength(int[] mas, int[] numbers, int k) {
 		int bignum = numbers[0];
 		int smallnum = numbers[0];
 		int big = 0, small = 0;
@@ -52,20 +58,20 @@ public class Practice1 {
 		System.out.printf("\n The shortest number: %d, it's length: %d", mas[small], smallnum);
 	}
 
-	private static void numbersAverage(int[] mas, int[] numbers, int kolich) {
+	private static void findnumbersAverage(int[] mas, int[] numbers, int k) {
 		float aver = 0;
-		float d = kolich;
+		float d = k;
 		int bigger = 0;
 		int smaller = 0;
 		int bignum = numbers[0];
 		int smallnum = numbers[0];
-		for (int i = 0; i < kolich; i++) {
+		for (int i = 0; i < k; i++) {
 			aver = aver + numbers[i];
 		}
 		aver = aver / d;
 		System.out.println("\n Average number: " + aver);
 		System.out.printf("\n Numbers with length less than average: ");
-		for (int i = 0; i < kolich; i++) {
+		for (int i = 0; i < k; i++) {
 			if (aver > numbers[i]) {
 				smaller = mas[i];
 				smallnum = (mas[i] + "").length();
@@ -73,7 +79,7 @@ public class Practice1 {
 			}
 		}
 		System.out.printf("\n Numbers with length more than average: ");
-		for (int i = 0; i < kolich; i++) {
+		for (int i = 0; i < k; i++) {
 			if (aver < numbers[i]) {
 				bigger = mas[i];
 				bignum = (mas[i] + "").length();
@@ -82,7 +88,7 @@ public class Practice1 {
 		}
 	}
 
-	private static void numberEven(int[] mas) {
+	private static void findnumberEven(int[] mas) {
 		int a = 0;
 		int b = 0;
 		int c = 0;
@@ -103,7 +109,7 @@ public class Practice1 {
 		System.out.println("Amount of numbers containing only even numbers: " + c);
 	}
 
-	private static void dividethreefive(int[] mas) {
+	private static void finddividethreefive(int[] mas) {
 		System.out.print("numbers divisible by 3 or 5: ");
 		for (int i = 0; i < mas.length; i++) {
 			if ((mas[i] % 3 == 0) || (mas[i] % 5 == 0)) {
@@ -112,8 +118,8 @@ public class Practice1 {
 		}
 	}
 
-	private static void primenumbers(int[] mas) {
-		boolean b;
+	private static void findprimeNumbers(int[] mas) {
+		boolean b = false;
 		System.out.print("\n prime numbers :");
 		for (int i = 0; i < mas.length; i++) {
 			if ((mas[i] != 1) && (mas[i] != 2)) {
@@ -128,57 +134,56 @@ public class Practice1 {
 			} else {
 				b = true;
 			}
-			if (b = false) {
+			if (b) {
 				System.out.print(mas[i] + " ");
 			}
 		}
 	}
 
-	private static void ascendingorder(int[] mas, int[] numbers, int kolich) {
+	private static void findascenDingorder(int[] mas, int[] numbers, int k) {
 		int d = 0;
 		boolean b;
 		System.out.print("\n First number with ascending order digdts: ");
-		for (int i = 0; i < kolich; i++) {
-			int k = 0;
+		for (int i = 0; i < k; i++) {
+			int m = 0;
 			b = false;
 			d = mas[i];
 			int array[] = new int[numbers[i]];
 			while (d > 9) {
-				array[k] = d % 10;
+				array[m] = d % 10;
 				d = d / 10;
-				if (array[k] > d % 10) {
+				if (array[m] > d % 10) {
 					b = true;
 				} else {
 					b = false;
 					break;
 				}
-				k++;
+				m++;
 			}
-			if (b == true) {
+			if (b) {
 				System.out.print(mas[i] + " ");
 				break;
 			}
 		}
 	}
-	
 
-	private static void polindrom(int[] mas, int[] numbers, int kolich) {
+	private static void findPolindrom(int[] mas, int[] numbers, int k) {
 		int d = 0;
 		boolean b;
 		System.out.print("\n First palindrom: ");
-		for (int i = 0; i < kolich; i++) {
-			int k = 0;
+		for (int i = 0; i < k; i++) {
+			int m = 0;
 			b = false;
 			d = mas[i];
 			int array[] = new int[numbers[i]];
 			while (d > 9) {
-				array[k] = d % 10;
+				array[m] = d % 10;
 				d = d / 10;
-				k++;
+				m++;
 			}
 			d = array.length - 1;
-			for (k = 0; k < d; k++) {
-				if (array[k] == array[d]) {
+			for (m = 0; m < d; m++) {
+				if (array[m] == array[d]) {
 					b = true;
 				} else {
 					b = false;

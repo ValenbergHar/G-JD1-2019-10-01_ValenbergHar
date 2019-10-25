@@ -7,11 +7,10 @@ public class Month {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		int a;
-		System.out.println("Enter number from 1 to 12");
+				System.out.println("Enter number from 1 to 12");
 		System.out.print("Number of Month = ");
 
-		a = in.nextInt();
+		int a = in.nextInt();
 		if (a == 1) {
 			System.out.println("January");
 		} else if (a == 2) {
