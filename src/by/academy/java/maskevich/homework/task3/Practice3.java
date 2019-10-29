@@ -73,7 +73,7 @@ public class Practice3 {
         Scanner in = new Scanner(System.in);
         int k = in.nextInt();
         char[] arrayNum = new char[k];
-        System.out.printf("\nEnter simbols: ");
+        System.out.printf("\nEnter symbols: ");
         for (int i = 0; i < k; i++) {
             arrayNum[i] = in.next().charAt(0);
         }
