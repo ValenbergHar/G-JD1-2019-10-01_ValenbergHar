@@ -1,4 +1,4 @@
-package by.academy.java.maskevich.homework.Task1;
+package by.academy.java.maskevich.homework.task1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -7,36 +7,52 @@ public class Month {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-				System.out.println("Enter number from 1 to 12");
+		System.out.println("Enter number from 1 to 12");
 		System.out.print("Number of Month = ");
 
 		int a = in.nextInt();
-		if (a == 1) {
+		switch (a) {
+		case 1:
 			System.out.println("January");
-		} else if (a == 2) {
+			break;
+		case 2:
 			System.out.println("February");
-		} else if (a == 3) {
+			break;
+
+		case 3:
 			System.out.println("March");
-		} else if (a == 4) {
+			break;
+		case 4:
 			System.out.println("April");
-		} else if (a == 5) {
+			break;
+		case 5:
 			System.out.println("May");
-		} else if (a == 6) {
+			break;
+		case 6:
 			System.out.println("June");
-		} else if (a == 7) {
+			break;
+		case 7:
 			System.out.println("July");
-		} else if (a == 8) {
+			break;
+		case 8:
 			System.out.println("August");
-		} else if (a == 9) {
+			break;
+		case 9:
 			System.out.println("September");
-		} else if (a == 10) {
+			break;
+		case 10:
 			System.out.println("October");
-		} else if (a == 11) {
+			break;
+		case 11:
 			System.out.println("November");
-		} else if (a == 12) {
+			break;
+		case 12:
 			System.out.println("December");
-		} else {
+			break;
+		default:
 			System.out.println("Month with this number does not exist");
+			break;
+
 		}
 	}
 }
