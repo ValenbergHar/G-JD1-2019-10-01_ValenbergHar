@@ -13,15 +13,15 @@ public class Practice3 {
         String text = readFromUrl("http://25.io/toau/audio/sample.txt");
         System.out.println(text);
         text = correctInputText(text);
-        makeLine();
-        makeReplaceSimbol(text);
-        makeLine();
+//        makeLine();
+//        makeReplaceSimbol(text);
+//        makeLine();
         findFrequentlyNum(text);
         makeLine();
-        findFirstAndLastSimilarLettersInWord(text);
-        makeLine();
-        findShotestLongestWords(text);
-        makeLine();
+//        findFirstAndLastSimilarLettersInWord(text);
+//        makeLine();
+//        findShotestLongestWords(text);
+//        makeLine();
     }
     private static String readFromUrl(final String url) throws MalformedURLException, IOException, ProtocolException {
         final URL obj = new URL(url);
