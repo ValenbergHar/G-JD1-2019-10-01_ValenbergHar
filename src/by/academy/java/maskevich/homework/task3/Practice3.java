@@ -82,7 +82,6 @@ public class Practice3 {
         for (int i = 0; i <= arrayNum.length; i++) {
             int n = 0;
             for (int l = 0; l <= max - 1; l++) {
-//                trouble in row 86
                 if (text.charAt(l) == arrayNum[i]) {
                     n++;
                 }
@@ -98,7 +97,7 @@ public class Practice3 {
         String[] array = text.split(" ");
         StringBuilder sb = new StringBuilder();
         for (String word : array) {
-//            trouble in row 102
+
             if (word.charAt(0) == word.charAt(word.length()-1)) {
                 System.out.print(sb.append(word).append(" "));
             }
