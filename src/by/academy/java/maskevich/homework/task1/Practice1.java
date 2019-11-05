@@ -40,23 +40,25 @@ public class Practice1 {
 		System.out.println("\n__________________");
 	}
 
-	private static void findnumbersLength(int[] mas, int[] numbers, int k) {
-		int bignum = numbers[0];
-		int smallnum = numbers[0];
-		int big = 0, small = 0;
-		for (int i = 0; i < mas.length; i++) {
-			small = i;
-			smallnum = (mas[i] + "").length();
-		}
-		for (int i = 0; i > mas.length; i++) {
-			big = i;
-			String str = Integer.toString(mas[i]);
-			int maxlength = str.length();
-			bignum = (mas[i] + "").length();
-		}
-		System.out.printf("The longest number : %d, it's length: %d", mas[big], bignum);
-		System.out.printf("\n The shortest number: %d, it's length: %d", mas[small], smallnum);
-	}
+	  private static void findnumbersLength(int[] mas, int[] numbers, int k) {
+	        int bignum = numbers[0];
+	        int smallnum = numbers[0];
+	        int big = 0, small = 0;
+	        int min = 10, max = 0;
+	        int minStr = 0, maxStr = 0;
+	        for (int i = 0; i < mas.length; i++) {
+	            if ((mas[i] + "").length() < min) {
+	                min = (mas[i] + "").length();
+	                minStr = mas[i];
+	            }
+	            if ((mas[i] + "").length() > max) {
+	                max = (mas[i] + "").length();
+	                maxStr = mas[i];
+	            }
+	        }
+	        System.out.printf("The longest number : %d, it's length: %d", maxStr, max);
+	        System.out.printf("\n The shortest number: %d, it's length: %d", minStr, min);
+	    }
 
 	private static void findnumbersAverage(int[] mas, int[] numbers, int k) {
 		float aver = 0;
