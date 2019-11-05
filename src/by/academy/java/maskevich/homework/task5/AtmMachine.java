@@ -1,4 +1,4 @@
-package by.academy.java.maskevich.homework.task4;
+package by.academy.java.maskevich.homework.task5;
  
  
 import java.util.Scanner;
