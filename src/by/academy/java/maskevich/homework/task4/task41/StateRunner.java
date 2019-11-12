@@ -5,7 +5,7 @@ public class StateRunner {
         State state = new State();
         state.square();
         state.writeCapital();
-        state.writeRegions();
-        state.amontOfDistrict();
+//        state.writeRegions();
+//        state.amontOfDistrict();
     }
 }

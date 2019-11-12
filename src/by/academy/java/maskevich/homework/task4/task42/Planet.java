@@ -9,6 +9,9 @@ public class Planet {
     private List<Continent> continentList = new ArrayList<>();
     private List<Island> islandList = new ArrayList<>();
     
+    private List<String> listOfRegions = new ArrayList<>();
+
+    
 
     public Planet(String name) {
         this.name = name;

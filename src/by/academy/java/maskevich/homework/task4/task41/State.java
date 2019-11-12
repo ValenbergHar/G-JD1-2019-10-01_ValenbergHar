@@ -8,10 +8,10 @@ public class State {
     public void writeCapital() {
         System.out.printf("%s is a capital of the Republic of Belarus", city.getCapital());
     }
-    public void writeRegions() {
-        System.out.println(regions.getRegionList);
-    }
-    public void writeAmountOfDistricts() {
-        System.out.printf("%n - is a number of district", getDistrictList());
-    }
+//    public void writeRegions() {
+//        System.out.println(regions.getRegionList);
+//    }
+//    public void writeAmountOfDistricts() {
+//        System.out.printf("%n - is a number of district", getDistrictList());
+//    }
 }
