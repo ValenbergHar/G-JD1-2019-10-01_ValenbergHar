@@ -6,12 +6,14 @@ import java.util.List;
 public class Region {
 	
 	private List<String> listOfRegions = new ArrayList<>();
+	{
 	listOfRegions.add("Hrodna region");
-//        listOfRegions.add("Miensk region");
-//        listOfRegions.add("Brest region");
-//        listOfRegions.add("Homiel region");
-//        listOfRegions.add("Mahiliou region");
-//        listOfRegions.add("Viciebsk region");
+        listOfRegions.add("Miensk region");
+        listOfRegions.add("Brest region");
+        listOfRegions.add("Homiel region");
+        listOfRegions.add("Mahiliou region");
+        listOfRegions.add("Viciebsk region");
+	}
 //        
 //    public void getRegionList(){
 //        listOfRegions.toString();
