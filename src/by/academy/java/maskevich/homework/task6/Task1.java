@@ -1,12 +1,12 @@
 package by.academy.java.maskevich.homework.task6;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
+import java.io.PrintWriter;
 
 public class Task1 {
 	public static void main(String[] args) throws IOException {
@@ -19,15 +19,18 @@ public class Task1 {
 				String[] words = line.split(" ");
 				for (String word : words) {
 					char c = word.toUpperCase().toCharArray()[0];
-					if (Character.isLetter(word.toUpperCase().toCharArray()[0])) {
+					if (Character.isLetter(c)) {
 						File dir = new File("D:/New folder/" + c);
 						if (!dir.exists()) {
 							dir.mkdir();
-							FileWriter writer = new FileWriter("D:/New folder/" + c + "/words.txt", true);
-							writer.write(word);
-							writer.flush();
-							writer.close();
 						}
+						FileWriter writer = new FileWriter("D:/New folder/" + c + "/words.txt", true);
+						System.out.printf("write word %s to fodler %s\n", word, c);
+						// BufferedWriter bw = new BufferedWriter(writer);
+						PrintWriter out = new PrintWriter(writer);
+						out.println(word);
+						// out.flush();
+						out.close();
 					}
 				}
 			}
