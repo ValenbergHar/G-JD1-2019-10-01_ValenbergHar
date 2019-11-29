@@ -1,4 +1,4 @@
-package task2;
+package by.academy.java.maskevich.classwork.lesson13.task2;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Email {

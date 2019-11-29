@@ -1,4 +1,4 @@
-package task2;
+package by.academy.java.maskevich.classwork.lesson13.task2;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package task2;
+package by.academy.java.maskevich.classwork.lesson13.task2;
 import java.util.Queue;
 
 public class Consumer extends Thread {
