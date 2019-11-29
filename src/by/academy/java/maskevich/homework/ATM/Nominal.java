@@ -1,4 +1,4 @@
-package by.academy.java.maskevich.homework.task5;
+package by.academy.java.maskevich.homework.ATM;
 
 public enum Nominal {
 
