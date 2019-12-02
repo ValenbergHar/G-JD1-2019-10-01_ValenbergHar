@@ -4,19 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Region {
-	
-	private List<String> listOfRegions = new ArrayList<>();
-	{
-	listOfRegions.add("Hrodna region");
-        listOfRegions.add("Miensk region");
-        listOfRegions.add("Brest region");
-        listOfRegions.add("Homiel region");
-        listOfRegions.add("Mahiliou region");
-        listOfRegions.add("Viciebsk region");
+
+	private List<District> listOfRegions = new ArrayList<>();
+
+	public void addRegions(District district) {
+		if (isRegoinCenter) {
+			listOfRegions.add(district);
+		}
 	}
-//        
-//    public void getRegionList(){
-//        listOfRegions.toString();
-//    }
-    
+
 }

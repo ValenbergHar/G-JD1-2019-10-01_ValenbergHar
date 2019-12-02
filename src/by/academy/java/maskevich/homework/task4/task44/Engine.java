@@ -25,5 +25,4 @@ public class Engine {
 	public void setEngineType(EngineType engineType) {
 		this.engineType = engineType;
 	}
-
 }

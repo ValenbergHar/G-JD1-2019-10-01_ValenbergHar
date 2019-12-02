@@ -1,7 +1,6 @@
 package by.academy.java.maskevich.homework.task4.task44;
 
 public class Wheel {
-
 	private int radius;
 
 	public int getRadius() {
@@ -27,5 +26,4 @@ public class Wheel {
 		this.radius = radius;
 		this.width = width;
 	}
-
 }

@@ -5,6 +5,8 @@ import java.util.List;
 public class Auto {
 	private String brand;
 	private Engine engine;
+	private List<Wheel> wheels;
+	private String vin;
 
 	public Engine getEngine() {
 		return engine;
@@ -30,9 +32,6 @@ public class Auto {
 		this.vin = vin;
 	}
 
-	private List<Wheel> wheels;
-	private String vin;
-
 	public String getBrand() {
 		return brand;
 	}
@@ -40,6 +39,22 @@ public class Auto {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	
 
+	public void move() {
+		System.out.println("Auto starts");
+	}
+
+	public void stop() {
+		System.out.println("Auto stops");
+	}
+
+	public void refuel(double liter) {
+		System.out.printf("Auto filled up by %s liter(s)\n", liter);
+	}
+
+	public void replaceWheel(int num) {
+		if (num >= 1 && num <= 4) {
+			System.out.println("Wheel number " + num + " replaced");
+		}
+	}
 }
