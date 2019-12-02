@@ -10,6 +10,7 @@ public class Region {
 	public void addRegions(District district) {
 		if (isRegoinCenter) {
 			listOfRegions.add(district);
+			
 		}
 	}
 
