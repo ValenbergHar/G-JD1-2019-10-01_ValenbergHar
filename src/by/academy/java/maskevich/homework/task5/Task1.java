@@ -26,10 +26,8 @@ public class Task1 {
 						}
 						FileWriter writer = new FileWriter("D:/New folder/" + c + "/words.txt", true);
 						System.out.printf("write word %s to fodler %s\n", word, c);
-						// BufferedWriter bw = new BufferedWriter(writer);
 						PrintWriter out = new PrintWriter(writer);
 						out.println(word);
-						// out.flush();
 						out.close();
 					}
 				}
