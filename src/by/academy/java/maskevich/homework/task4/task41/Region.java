@@ -5,14 +5,11 @@ import java.util.List;
 
 public class Region {
 
-	private List<District> listOfRegions = new ArrayList<>();
+	private District district;
+	private List<District> listOfDistricts = new ArrayList<>();
 
 	public void addRegions(District district) {
-//		if (isRegoinCenter) {
-		listOfRegions.add(district);
+		listOfDistricts.add(district);
 
-		
-//		}
 	}
-
 }

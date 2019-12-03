@@ -8,6 +8,9 @@ public class StateRunner {
 		City city4 = new City("Lida", false, false);
 		City city5 = new City("dziatlava", false, false);
 		
+		District district1 = new District (city1);
+		
+		
 		
 		
 	}
