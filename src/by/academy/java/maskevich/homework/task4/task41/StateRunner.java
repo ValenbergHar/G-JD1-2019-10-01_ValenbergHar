@@ -9,5 +9,6 @@ public class StateRunner {
 		City city5 = new City("dziatlava", false, false);
 		
 		
+		
 	}
 }

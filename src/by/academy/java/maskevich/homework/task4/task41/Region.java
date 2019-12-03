@@ -8,10 +8,11 @@ public class Region {
 	private List<District> listOfRegions = new ArrayList<>();
 
 	public void addRegions(District district) {
-		if (isRegoinCenter) {
-			listOfRegions.add(district);
-			
-		}
+//		if (isRegoinCenter) {
+		listOfRegions.add(district);
+
+		
+//		}
 	}
 
 }
