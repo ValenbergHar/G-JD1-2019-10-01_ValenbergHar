@@ -4,12 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Region {
+	
 
-	private District district;
-	private List<District> listOfDistricts = new ArrayList<>();
+	public List<District> getListOfDistricts() {
+		return districts;
+	}
+
+	public void setListOfDistricts(List<District> listOfDistricts) {
+		this.districts = listOfDistricts;
+	}
+
+	private List<District> districts = new ArrayList<>();
 
 	public void addRegions(District district) {
-		listOfDistricts.add(district);
+		districts.add(district);
 
 	}
 }

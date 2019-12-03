@@ -5,15 +5,20 @@ import java.util.List;
 
 public class District {
 
-	public District(List<City> listOfCities) {
+	private int area;
 
-		this.listOfCities = listOfCities;
+	private List<City> cities = new ArrayList<>();
+
+	public List<City> getCities() {
+		return cities;
 	}
 
-	List<City> listOfCities = new ArrayList<>();
+	public void setCities(List<City> cities) {
+		this.cities = cities;
+	}
 
 	public void addCity(City city) {
-		listOfCities.add(city);
+		cities.add(city);
 	}
 
 }
