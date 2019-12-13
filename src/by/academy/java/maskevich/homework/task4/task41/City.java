@@ -2,16 +2,12 @@ package by.academy.java.maskevich.homework.task4.task41;
 
 public class City {
 	private String name;
-	private boolean isCapital;
-	private boolean isRegoinCenter;
+	private CityType cityType;
 
-
-
-	public City(String name, boolean isCapital, boolean isRegoinCenter) {
+	public City(String name, CityType cityType) {
 		super();
 		this.name = name;
-		this.isCapital = isCapital;
-		this.isRegoinCenter = isRegoinCenter;
+		this.cityType = cityType;
 	}
 
 	public String getName() {
@@ -22,12 +18,8 @@ public class City {
 		this.name = name;
 	}
 
-	public boolean isCapital() {
-		return isCapital;
-	}
-
-	public void setCapital(boolean isCapital) {
-		this.isCapital = isCapital;
+	public Object getCityType() {
+		return null;
 	}
 
 }

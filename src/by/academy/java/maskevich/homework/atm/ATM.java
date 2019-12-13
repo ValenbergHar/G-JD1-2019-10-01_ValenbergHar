@@ -1,4 +1,4 @@
-package by.academy.java.maskevich.homework.ATM;
+package by.academy.java.maskevich.homework.atm;
 
 import java.util.ArrayList;
 import java.util.Collections;
