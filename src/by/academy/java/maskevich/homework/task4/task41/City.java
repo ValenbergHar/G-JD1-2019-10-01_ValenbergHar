@@ -14,6 +14,6 @@ public class City {
         this.name = name;
     }
     public Object getCityType() {
-        return null;
+		return null;
     }
 }
