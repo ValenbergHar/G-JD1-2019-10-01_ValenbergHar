@@ -1,4 +1,4 @@
-package by.academy.java.maskevich.homework.ATM;
+package by.academy.java.maskevich.homework.atm;
 
 public class ResultItem extends AbstractMoneyItem {
 

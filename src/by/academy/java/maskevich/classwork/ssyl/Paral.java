@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class Paral{
+public class Paral {
 	public static void main(String[] args) {
 		List<String> values = new ArrayList<>();
 		for (int i = 0; i < 1_000_000; i++) {
