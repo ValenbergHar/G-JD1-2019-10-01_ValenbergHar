@@ -18,8 +18,8 @@ public class City {
 		this.name = name;
 	}
 
-	public Object getCityType() {
-		return null;
+	public CityType getCityType() {
+		return cityType;
 	}
 
 }
