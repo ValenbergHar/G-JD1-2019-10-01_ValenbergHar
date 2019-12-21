@@ -5,11 +5,13 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
-public class Snake {
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+public class SnakeGame {
 
 	final String TITLE_OF_PROGRAM = "Snake";
 	final String GAME_OVER = "GAME_OVER";
-	final int POINT_RADIUS = 20;
+	final int POINT_RADIUS =20;
 	final int FILED_WIDTH = 30;
 	final int FILED_HEIGHT = 20;
 	final int FILED_DX = 6;
@@ -31,12 +33,12 @@ public class Snake {
 	// Food food;
 	// Poison poison;
 	JFrame frame;
-	Canvas canvasPanelCanvas;
+	Canvas canvasPanel;
 	Random random = new Random();
 	boolean gameOver = false;
 
 	public static void main(String[] args) {
-		new Snake().go();
+		new SnakeGame().go();
 	}
 
 	private void go() {
@@ -45,14 +47,68 @@ public class Snake {
 		frame.setSize(FILED_WIDTH * POINT_RADIUS + FILED_DX, FILED_HEIGHT * POINT_RADIUS + FILED_DY);
 		frame.setLocation(START_LOCATION, START_LOCATION);
 		frame.setResizable(false);
+
+		canvasPanel = new Canvas();
+		canvasPanel.setBackground(Color.white);
+
+		frame.getContentPane().add(BorderLayout.CENTER, canvasPanel);
+		frame.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent e) {
+				// snake.setDirection(e.getKeyCode());
+				System.out.println(e.getKeyCode());
+			}
+		});
+		frame.setVisible(true);
 		
-		frame.set
+		snake = new Snake(START_SNAKE_X, START_SNAKE_Y , START_SNAKE_SIZE, START_DIRECTION);
+	}
+
+	class Snake {
+		ArrayList<Point> snake = new ArrayList<Point>();
+		int direction;
+
+		public Snake(int x, int y, int length, int direction) {
+			for (int i = 0; i < length; i++) {
+				Point point = new Point(x - i, y);
+				snake.add(point);
+			}
+			this.direction = direction;
+		}
+
+		void paint(Graphics g) {
+			for (Point point : snake) {
+				point.paint(g);
+			}
+
+		}
+	}
+
+	class Point {
+		int x, y;
+		Color color = DEFAULT_COLOR;
+
+		public Point(int x, int y) {
+			this.setXY(x, y);
+
+		}
+
+		void paint(Graphics g) {
+			g.setColor(color);
+			g.fillOval(x * POINT_RADIUS, y * POINT_RADIUS, POINT_RADIUS, POINT_RADIUS);
+		}
+
+		private void setXY(int x2, int y2) {
+			this.x = x;
+			this.y = y;
+		}
+
 	}
 
 	public class Canvas extends JPanel {
 		@Override
 		public void paint(Graphics g) {
 			super.paint(g);
+			snake.paint(g);
 		}
 	}
 
