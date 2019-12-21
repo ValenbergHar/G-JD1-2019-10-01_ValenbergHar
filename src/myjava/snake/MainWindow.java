@@ -1,5 +1,6 @@
 package snake;
-import javax.swing.JFrame;
+
+import javax.swing.*;
 
 public class MainWindow extends JFrame {
 	public MainWindow() {
@@ -14,8 +15,6 @@ public class MainWindow extends JFrame {
 
 	public static void main(String[] args) {
 		MainWindow mw = new MainWindow();
-		
-		
 
 	}
 }
