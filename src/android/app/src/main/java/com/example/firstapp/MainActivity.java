@@ -4,18 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private int quantity;
     private int price=10;
-    String name;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+   protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+   }
     public void increment(View view) {
         display(++quantity);
 
@@ -30,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText("" + number);
     }
 
-
     private void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        EditText et = findViewById(R.id.ettext);
+        String name = et.getText().toString();
         priceTextView.setText(createOrderSummary (name, quantity));
         //priceTextView.setText(""+number);
         //(NumberFormat.getCurrencyInstance(new Locale("hi", "IN")).format(""+number));
@@ -44,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Шчыры Дзяк!", Toast.LENGTH_SHORT).show();
     }
 
-    public String createOrderSummary (String name, int quantity){
-        return "Name: " + name + "\n" + "Quantity: " + quantity + "\n" + "Total: $" + price*quantity +"\n";
+    public String createOrderSummary (String nam, int quantity){
+        return "Name: " + nam + "\n" + "Quantity: " + quantity + "\n" + "Total: $" + price*quantity +"\n";
     }
 
 
