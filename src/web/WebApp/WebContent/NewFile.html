@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Впачр</title>
+</head>
+<body>
+	<form action="MyServlet">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="firstName"></td>
+			</tr>
+			<tr>
+				<td>Surname</td>
+				<td><input type="text" name="secondName"></td>
+			</tr>
+			<tr>
+				<td>Occupation</td>
+
+
+				<td><select id="job">
+						<option value="">--Please choose a job--</option>
+						<option value="developer">Developer</option>
+						<option value="Tester">Tester</option>
+						<option value="Analist">Analist</option>
+						<option value="Analist">Хуй паймі хто</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>
+					<div>Sex</div>
+				<td>
+					<div>
+						<input type="radio" id="male" name="gender" value="male" checked>
+						<label for="male">Male</label>
+					</div>
+
+					<div>
+						<input type="radio" id="female" name="gender" value="female">
+						<label for="female">Female</label>
+					</div>
+					<div>
+						<input type="radio" id="pid" name="gender" value="pid">
+						<label for="pid">Підарасіна</label>
+					</div>
+				</td>
+				</td>
+			</tr>
+			<tr>
+				<td>Elder 18?</td>
+				<td><input type="checkbox" name="age18" value="Yes">Yes<br>
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Send"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
