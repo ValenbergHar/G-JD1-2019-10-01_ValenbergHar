@@ -4,4 +4,9 @@
     <string name="search">Search </string>
     <string name="result">surname name</string>
 
+
+    <string name="error_message">Neciku niama</string>
+
+
+
 </resources>
