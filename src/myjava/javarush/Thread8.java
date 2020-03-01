@@ -2,6 +2,7 @@ package javarush;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Random;
 
 public class Thread8 {
 
@@ -52,14 +53,15 @@ class ProdCons {
 	private Object lock = new Object();
 
 	public void produce() throws InterruptedException {
-		int value = 0;
 		while (true) {
 			synchronized (lock) {
 				while (queue.size() == LIMIT) {
 					lock.wait();
 
 				}
-				queue.offer(value++);
+				int value = new Random().nextInt();
+				
+				queue.offer(value);
 				System.out.println("Prod put " + value + ". Size in prod is "
 						+ queue.size());
 				lock.notify();
