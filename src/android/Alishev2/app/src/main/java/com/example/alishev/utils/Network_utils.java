@@ -12,13 +12,13 @@ import java.util.Scanner;
 
 public class Network_utils {
     private static final String VK_API_BASE_URL = "https://api.vk.com/";
-    private static final String VK_USERS_GET ="/method/users.get";
+    private static final String VK_USERS_GET = "/method/users.get";
     private static final String PARAM_USER_ID = "user_ids";
     private static final String PARAM_VERSION = "v";
     private static final String ACCESS_TOKEN = "access_token";
 
 
-    public static URL generatedURL(String userIds){
+    public static URL generatedURL(String userIds) {
         Uri builtUri = Uri.parse(VK_API_BASE_URL + VK_USERS_GET)
                 .buildUpon()
                 .appendQueryParameter(PARAM_USER_ID, userIds)
@@ -34,7 +34,8 @@ public class Network_utils {
 
         return url;
     }
-    public static String getResponceFromURL (URL url) throws IOException {
+
+    public static String getResponceFromURL(URL url) throws IOException {
         HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
         try {
             InputStream in = urlConnection.getInputStream();
@@ -48,10 +49,10 @@ public class Network_utils {
                 return null;
             }
 
-        }catch (UnknownHostException e){
+        } catch (UnknownHostException e) {
             return null;
 
-            }finally {
+        } finally {
             urlConnection.disconnect();
         }
     }
