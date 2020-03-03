@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/src</name>
+			<type>2</type>
+			<location>D:/Education/Java/MaskevichValery/src</location>
+		</link>
+	</linkedResources>
 </projectDescription>
