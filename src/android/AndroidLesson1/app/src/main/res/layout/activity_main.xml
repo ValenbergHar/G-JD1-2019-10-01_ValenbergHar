@@ -48,12 +48,6 @@
 
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
@@ -75,7 +69,6 @@
 
         <TextView
             android:id="@+id/text_order_price"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -86,11 +79,11 @@
 
         <TextView
             android:id="@+id/order_price"
-            android:layout_below="@id/text_order_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_below="@id/text_order_price"
             android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
             android:text="0"
             android:textSize="18dp"
             android:textStyle="bold" />
@@ -98,14 +91,71 @@
 
         <TextView
             android:id="@+id/currency"
-            android:layout_below="@id/text_order_price"
-            android:layout_toRightOf="@id/order_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="0dp"
+            android:layout_below="@id/text_order_price"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/order_price"
             android:text="$"
             android:textSize="18dp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/quantity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/text_order_price"
+            android:text="Quantity"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/minus_button"
+            android:onClick="decreaseQuantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/quantity_title"
+            android:layout_marginLeft="110dp"
+            android:layout_toRightOf="@id/currency"
+
+            android:background="@color/colorPrimaryDark"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/quantity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quantity_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/minus_button"
+            android:text="0"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/plus_button"
+            android:onClick="increaseQuantity"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/quantity_title"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/quantity_text"
+            android:background="@color/colorPrimaryDark"
+            android:text="+" />
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_to_card_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="30dp"
+        android:text="ADD TO CARD" />
 </LinearLayout>
