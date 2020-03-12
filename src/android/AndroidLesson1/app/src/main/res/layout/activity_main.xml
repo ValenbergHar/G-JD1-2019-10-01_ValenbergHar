@@ -54,13 +54,13 @@
         android:layout_height="wrap_content" />
 
     <ImageView
+        android:id="@+id/imagine_center"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
-        android:src="@drawable/vasmi_rog"
 
-        />
+        android:src="@drawable/vasmi_rog" />
 
 
     <RelativeLayout
@@ -82,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_order_price"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="50dp"
             android:layout_marginTop="10dp"
             android:text="0"
             android:textSize="18dp"
@@ -119,9 +119,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_below="@id/quantity_title"
-            android:layout_marginLeft="110dp"
-            android:layout_toRightOf="@id/currency"
-
+            android:layout_marginLeft="200dp"
+            android:layout_alignParentLeft="true"
             android:background="@color/colorPrimaryDark"
             android:text="-" />
 
@@ -157,5 +156,6 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         android:layout_marginTop="30dp"
+        android:onClick="addToCard"
         android:text="ADD TO CARD" />
 </LinearLayout>
