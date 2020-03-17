@@ -55,36 +55,39 @@
 
     <ImageView
         android:id="@+id/previousBackgroundImageView"
-        android:onClick="prev"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
+        android:onClick="prev"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/circle_background"
-        tools:layout_editor_absoluteY="521dp" />
+        app:layout_constraintTop_toTopOf="@+id/previousIconImageView"
+        app:srcCompat="@drawable/circle_background" />
+
     <ImageView
         android:id="@+id/previousIconImageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
+        android:layout_marginTop="525dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_skip_previous_black_24dp"
-        tools:layout_editor_absoluteY="521dp" />
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/playBackgroundImageView"
-        android:onClick="play"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
+        android:onClick="play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playIconImageView"
         app:srcCompat="@drawable/circle_background"
-        tools:layout_editor_absoluteY="521dp"
         tools:ignore="DuplicateIds" />
 
     <ImageView
@@ -93,31 +96,35 @@
         android:layout_height="60dp"
         android:layout_marginStart="160dp"
         android:layout_marginLeft="160dp"
+        android:layout_marginTop="525dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_play_arrow_yellow_24dp"
-        tools:layout_editor_absoluteY="521dp"
-        tools:ignore="DuplicateIds" />
+        tools:ignore="DuplicateIds,VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/nextBackgroundImageView"
-        android:onClick="next"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
+        android:onClick="next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/circle_background"
-        tools:layout_editor_absoluteY="521dp" />
+        app:layout_constraintTop_toTopOf="@+id/nextImageImageView"
+        app:srcCompat="@drawable/circle_background" />
+
     <ImageView
         android:id="@+id/nextImageImageView"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_marginTop="525dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_skip_next_black_24dp"
-        tools:layout_editor_absoluteY="521dp" />
+        tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
