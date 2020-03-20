@@ -6,6 +6,7 @@ public class PizzaRecipeItem {
     private String description;
     private String recipe;
 
+
     public PizzaRecipeItem(int imageResource, String title, String description, String recipe) {
         this.imageResource = imageResource;
         this.title = title;
