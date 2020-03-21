@@ -4,7 +4,7 @@
 
     <CheckBoxPreference
         android:defaultValue="false"
-        android:key="Enable_sound1"
+        android:key="Enable_sound"
         android:summaryOff="Sound Disabled"
         android:summaryOn="Sound Enabled"
         android:title="Enable_sound" />
@@ -14,6 +14,11 @@
         android:entryValues="@array/pref_timer_melody_values"
         android:key="timer_melody"
         android:title="Timer_Melody" />
+    <EditTextPreference
+        android:title="Timer Default Interval"
+        android:key="timer_default_interval"
+        android:defaultValue="30"
+        />
 
 
 </PreferenceScreen>
