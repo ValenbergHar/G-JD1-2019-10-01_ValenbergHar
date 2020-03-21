@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.util.Log;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,15 +15,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CountDownTimer myTimer =new CountDownTimer(10000, 1000) {
+        CountDownTimer myTimer = new CountDownTimer(10000, 1000) {
             @Override
             public void onTick(long l) {
-                Log.d("myTimer", String.valueOf(l/1000) + " seconds left" );
+
+
+                Log.d("myTimer", String.valueOf(l / 1000) + " seconds left");
             }
 
             @Override
-            public void onFinish() {
-                Log.d("myTimer", "Finish!" );
+            public void onFinish()
+            {
+                Toast.makeText(MainActivity.this, "on", Toast.LENGTH_LONG);
+                Log.d("myTimer", "Finish!");
             }
         };
         myTimer.start();
@@ -37,9 +42,6 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        };
 //        handler.post(runnable);
-
-
-
 
 
     }
