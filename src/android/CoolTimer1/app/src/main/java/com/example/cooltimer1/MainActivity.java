@@ -20,13 +20,14 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
     private TextView textView;
     private SeekBar seekBar;
     private boolean isTimerOn;
     private Button button;
     private CountDownTimer countDownTimer;
     private int defaultInterval;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +42,9 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         isTimerOn = false;
         seekBar.setMax(100);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        setIntervalFromSharedPreference(sharedPreferences);
 
-        setIntervalFromSharedPreference(PreferenceManager.getDefaultSharedPreferences(this));
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+        sharedPreferences.registerOnSharedPreferenceChangeListener(this);
     }
 
 
@@ -111,12 +113,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void resetTime() {
         countDownTimer.cancel();
-
         button.setText("START");
         seekBar.setEnabled(true);
-        setIntervalFromSharedPreference(PreferenceManager.getDefaultSharedPreferences(this));
         isTimerOn = false;
-
+        setIntervalFromSharedPreference(sharedPreferences);
     }
 
     private void time(long millisUntilFinished) {
@@ -171,9 +171,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setIntervalFromSharedPreference(SharedPreferences sharedPreference) {
-        defaultInterval = Integer.valueOf(sharedPreference.getString("defaultValue", "30"));
-        textView.setText("00:" + defaultInterval);
+        defaultInterval = Integer.valueOf(sharedPreference.getString("timer_default_interval", "30"));
+        long defaultIntervalInMillis = defaultInterval * 1000;
+        time(defaultIntervalInMillis);
         seekBar.setProgress(defaultInterval);
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (key.equals("timer_default_interval")) {
+            setIntervalFromSharedPreference(sharedPreferences);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        sharedPreferences.unregisterOnSharedPreferenceChangeListener(this);
     }
 }
 
