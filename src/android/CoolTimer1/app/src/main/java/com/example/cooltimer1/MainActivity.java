@@ -171,7 +171,8 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
     }
 
     private void setIntervalFromSharedPreference(SharedPreferences sharedPreference) {
-        defaultInterval = Integer.valueOf(sharedPreference.getString("timer_default_interval", "30"));
+
+        defaultInterval = Integer.va lueOf(sharedPreference.getString("timer_default_interval", "30"));
         long defaultIntervalInMillis = defaultInterval * 1000;
         time(defaultIntervalInMillis);
         seekBar.setProgress(defaultInterval);

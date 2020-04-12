@@ -3,6 +3,7 @@ package com.example.cooltimer1;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+import android.widget.Toast;
 
 import java.util.prefs.PreferenceChangeEvent;
 
@@ -14,7 +15,7 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 
-public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
+public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener, Preference.OnPreferenceChangeListener {
 
 
     @Override
@@ -33,6 +34,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
 
             }
         }
+        Preference preference = findPreference("timer_default_interval");
+        preference.setOnPreferenceChangeListener(this);
     }
 
     private void setPreference(Preference preference, String value) { //каб паказвала ў наладах премененны варыянт
@@ -68,5 +71,22 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         }
 
 
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        Toast toast = Toast.makeText(getContext(), "Лічбу ўвядзіце, га", Toast.LENGTH_LONG);
+        if (preference.getKey().equals("timer_default_interval")) {
+            String defaultIntervalString = (String) newValue;
+
+            try {
+                int defaultInterval = Integer.parseInt(defaultIntervalString);
+            } catch (NumberFormatException nex) {
+                toast.show();
+                return false;
+            }
+        }
+
+        return true;
     }
 }
