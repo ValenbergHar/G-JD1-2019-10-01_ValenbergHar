@@ -1,0 +1,4 @@
+#Fri Mar 20 16:39:11 MSK 2020
+base.0=D\:\\Education\\Education\\Java\\Java\\src\\SharedPreference\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
