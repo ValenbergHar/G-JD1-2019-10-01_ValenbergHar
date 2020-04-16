@@ -18,8 +18,9 @@
             </intent-filter>
         </activity>
         <provider
-            android:authorities="package com.example.clubolympus"
-            android:name=""
-    </application>
+            android:authorities="com.example.clubolympus"
+            android:name=".data.OlympusContentProvuder"
+            android:exported="false"/>
+</application>
 
 </manifest>

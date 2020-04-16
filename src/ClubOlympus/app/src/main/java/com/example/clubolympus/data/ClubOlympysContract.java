@@ -10,6 +10,11 @@ public final class ClubOlympysContract {
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "olympus";
 
+    public static final String SCHEME = "content://";
+    public static final String AUTHORITY = "com.android.uraall.clubolympus";
+    public static final String PATH_MEMBERS = "members";
+
+
     public static final class MemberEntry implements BaseColumns {
         public static final String TABLE_NAME = "members";
 
