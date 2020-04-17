@@ -19,7 +19,7 @@
         </activity>
         <provider
             android:authorities="com.example.clubolympus"
-            android:name=".data.OlympusContentProvuder"
+            android:name=".data.OlympusContentProvider"
             android:exported="false"/>
 </application>
 
