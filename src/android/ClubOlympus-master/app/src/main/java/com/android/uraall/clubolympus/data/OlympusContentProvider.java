@@ -29,7 +29,7 @@ public class OlympusContentProvider extends ContentProvider {
                 ClubOlympusContract.PATH_MEMBERS, MEMBERS);
         uriMatcher.addURI(ClubOlympusContract.AUTHORITY,
                 ClubOlympusContract.PATH_MEMBERS
-                + "/#", MEMBER_ID);
+                        + "/#", MEMBER_ID);
 
     }
 
@@ -51,15 +51,14 @@ public class OlympusContentProvider extends ContentProvider {
         int match = uriMatcher.match(uri);
 
 
-
         switch (match) {
             case MEMBERS:
                 cursor = db.query(MemberEntry.TABLE_NAME, projection, selection,
                         selectionArgs, null, null, sortOrder);
                 break;
 
-                // selection = "_id=?"
-                // selectionArgs = 34
+            // selection = "_id=?"
+            // selectionArgs = 34
             case MEMBER_ID:
                 selection = MemberEntry._ID + "=?";
                 selectionArgs = new String[]
@@ -134,15 +133,9 @@ public class OlympusContentProvider extends ContentProvider {
 
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
-
         SQLiteDatabase db = dbOpenHelper.getWritableDatabase();
-
         int match = uriMatcher.match(uri);
-
         int rowsDeleted;
-
-
-
         switch (match) {
             case MEMBERS:
 
@@ -249,7 +242,6 @@ public class OlympusContentProvider extends ContentProvider {
     public String getType(Uri uri) {
 
         int match = uriMatcher.match(uri);
-
 
 
         switch (match) {

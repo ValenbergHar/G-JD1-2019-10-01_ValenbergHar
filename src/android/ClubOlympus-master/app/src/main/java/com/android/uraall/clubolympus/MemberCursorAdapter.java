@@ -21,27 +21,25 @@ import com.android.uraall.clubolympus.data.ClubOlympusContract;
 import com.android.uraall.clubolympus.data.ClubOlympusContract.MemberEntry;
 
 
-
 public class MemberCursorAdapter extends CursorAdapter {
-    
-public MemberCursorAdapter(Context context, Cursor c, boolean autoRequery) {
-       
- super(context, c, autoRequery);
+
+    public MemberCursorAdapter(Context context, Cursor c, boolean autoRequery) {
+
+        super(context, c, autoRequery);
     }
 
-   
-@Override
-    
-public View newView(Context context, Cursor cursor, ViewGroup parent) {
-     
-   return LayoutInflater.from(context).inflate(R.layout.member_item, parent,
-        
-        false);
+
+    @Override
+
+    public View newView(Context context, Cursor cursor, ViewGroup parent) {
+
+        return LayoutInflater.from(context).inflate(R.layout.member_item, parent,
+
+                false);
     }
 
-    
 
-@Override
+    @Override
     public void bindView(View view, Context context, Cursor cursor) {
 
         TextView firstNameTextView = view.findViewById(R.id.firstNameTextView);

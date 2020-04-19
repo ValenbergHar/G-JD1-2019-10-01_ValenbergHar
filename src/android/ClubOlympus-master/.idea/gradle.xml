@@ -3,12 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <compositeConfiguration>
-          <compositeBuild compositeDefinitionSource="SCRIPT" />
-        </compositeConfiguration>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:/Install/Gradle/gradle-4.6" />
+        <option name="gradleHome" value="D:/SOFT &amp; Drivers/Instal/Gradle/gradle-4.6" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

@@ -1,5 +1,5 @@
-package web.chapter3.src.com.example.web;
-import web.chapter3.src.com.example.model.*;
+package com.example.web;
+import com.example.model;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.*;
