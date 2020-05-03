@@ -2,6 +2,7 @@
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +23,12 @@ public class ServletGet extends HttpServlet {
 						+ "<form action ='servletget' method = 'get'>" + "<input type = 'text' name = 'one'/>"
 						+ "<input type = 'text' name = 'two'/>" + "<input type = 'submit' name = 'submit'/>" + "</form>"
 						+ "</body>" + "</html>");
+
+//		Cookie[] cookies = request.getCookies();
+//		for (Cookie cookie : cookies) {
+//			System.out.println(cookie.getName());
+//			System.out.println(cookie.getValue());
+//		 }
 	}
 
 }
