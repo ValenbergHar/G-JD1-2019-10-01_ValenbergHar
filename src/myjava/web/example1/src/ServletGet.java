@@ -3,6 +3,7 @@ package web.example1.src;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,6 +19,7 @@ public class ServletGet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		String oneString = request.getParameter("one");
 		String twoString = request.getParameter("two");
+<<<<<<< HEAD
 		response.getWriter().write(
 				"<html>" + "<head></head>" + "<body>" + "one = " + oneString
 						+ " two = " + twoString
@@ -26,6 +28,19 @@ public class ServletGet extends HttpServlet {
 						+ "<input type = 'text' name = 'two'/>"
 						+ "<input type = 'submit' name = 'submit'/>"
 						+ "</form>" + "</body>" + "</html>");
+=======
+		response.getWriter()
+				.write("<html>" + "<head></head>" + "<body>" + "one = " + oneString + " two = " + twoString
+						+ "<form action ='servletget' method = 'get'>" + "<input type = 'text' name = 'one'/>"
+						+ "<input type = 'text' name = 'two'/>" + "<input type = 'submit' name = 'submit'/>" + "</form>"
+						+ "</body>" + "</html>");
+
+//		Cookie[] cookies = request.getCookies();
+//		for (Cookie cookie : cookies) {
+//			System.out.println(cookie.getName());
+//			System.out.println(cookie.getValue());
+//		 }
+>>>>>>> 0a82b095c2eb2a454166e7ddc5a0a1d941051ae9
 	}
 
 }
