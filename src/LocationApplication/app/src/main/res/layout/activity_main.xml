@@ -28,14 +28,14 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/startLocationUpdates"
+        android:id="@+id/startLocationUpdatesButton"
         android:text="Start location updates"
         android:layout_marginTop="150dp"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
-        android:id="@+id/stopLocationUpdates"
+        android:id="@+id/stopLocationUpdatesButton"
         android:text="Stop location updates"
         style="@style/Widget.AppCompat.Button.Colored"
         android:enabled="false"
