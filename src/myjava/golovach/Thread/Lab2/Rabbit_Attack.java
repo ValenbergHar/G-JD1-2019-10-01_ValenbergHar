@@ -8,6 +8,7 @@ import golovach.Thread.Lab1.PrintRunnable;
  * которые пишут по 10 раз в консоль и умирают. На лицо асимметрия: main() породлает, printer() печатает.
  * Сделайте новый класс RabbitPrinter, который и пишет в консоль, и порождает каждую секунду новые RabbitPtinter-ы
  */
+
 public class Rabbit_Attack {
     public static void main(String[] args) throws InterruptedException {
         for (int k = 1; k < 10; k++){

@@ -1,17 +1,12 @@
 package senla.task6;
 
 public class Item {
-	private String name;
 	private double weight;
 	private double value;
 
-	public Item(String name, double weight, double value) {
-		this.name = name;
+	public Item(double weight, double value) {
 		this.weight = weight;
-	}
-
-	public String getName() {
-		return name;
+		this.value = value;
 	}
 
 	public double getWeight() {
@@ -26,11 +21,16 @@ public class Item {
 		this.weight = weight;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public void setValue(double value) {
 		this.value = value;
+	}
+
+	public double valueUnitOfWeight() {
+		return value / (double) weight;
+	}
+
+	public String toString() {
+		return "{w: " + weight + ", v: " + value+"}";
+
 	}
 }

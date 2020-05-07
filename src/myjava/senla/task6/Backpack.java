@@ -1,72 +1,36 @@
 package senla.task6;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.Comparator;
 
-public class Backpack {
-	private double maxW;
-	private double bestPrice;
-	private List<Item> bestItems = null;
+public class BackPack {
 
-	public Backpack(double maxW) {
-		this.maxW = maxW;
+	public static void main(String[] args) {
+		final Item item1 = new Item(4, 40);
+		final Item item2 = new Item(5, 30);
+		final Item item3 = new Item(6, 8);
+		final Item item4 = new Item(10, 54);
 
-	}
+		final Item[] items = { item1, item2, item3,item4 };
 
-	public double getMaxW() {
-		return this.maxW;
-	}
+		Arrays.sort(items, Comparator.comparingDouble(Item::valueUnitOfWeight).reversed());
+		System.out.println(Arrays.toString(items));
+		final int W = 10;
+		int weightInBackpack = 0;
+		int valueInBackpack = 0;
+		int currentItem = 0;
 
-	public void makeAllSets(List<Item> items) {
-		if (items.size() > 0)
-			checkSet(items);
-
-		for (int i = 0; i < items.size(); i++) {
-			List<Item> newSet = new ArrayList<Item>(items);
-
-			newSet.remove(i);
-
-			makeAllSets(newSet);
-		}
-
-	}
-
-	private void checkSet(List<Item> items) {
-		if (bestItems == null) {
-			if (calcWeigth(items) <= maxW) {
-				bestItems = items;
-				bestPrice = calcPrice(items);
+		while (currentItem < items.length && weightInBackpack != W) {
+			if (weightInBackpack + items[currentItem].getWeight() < W) {
+				valueInBackpack += items[currentItem].getValue();
+				weightInBackpack += items[currentItem].getWeight();
+			} else {
+				valueInBackpack += (W - weightInBackpack) / (double) items[currentItem].getWeight()*items[currentItem].getValue();
+				weightInBackpack=W;
 			}
-		} else {
-			if (calcWeigth(items) <= maxW && calcPrice(items) > bestPrice) {
-				bestItems = items;
-				bestPrice = calcPrice(items);
-			}
+			currentItem++;
 		}
+		System.out.println( + valueInBackpack);
+
 	}
-
-	private double calcWeigth(List<Item> items) {
-		double sumW = 0;
-
-		for (Item i : items) {
-			sumW += i.getWeight();
-		}
-
-		return sumW;
-	}
-
-	private double calcPrice(List<Item> items) {
-		double sumPrice = 0;
-
-		for (Item i : items) {
-			sumPrice += i.getValue();
-		}
-
-		return sumPrice;
-	}
-
-	public List<Item> getBestSet() {
-		return bestItems;
-	}
-
 }
