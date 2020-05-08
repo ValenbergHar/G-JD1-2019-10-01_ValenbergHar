@@ -3,7 +3,7 @@ package senla.task6;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class BackPack {
+public class Backpack {
 
 	public static void main(String[] args) {
 		final Item item1 = new Item(4, 40);

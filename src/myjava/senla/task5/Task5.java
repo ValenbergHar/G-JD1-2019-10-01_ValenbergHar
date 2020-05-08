@@ -24,7 +24,7 @@ public class Task5 {
 			System.out.print("\nPalindroms: ");
 
 			for (int i = 0; i < arr.length; i++) {
-				isPalindrome(arr[i]);
+				Program.isPalindrome(arr[i]);
 			}
 
 		} catch (InputMismatchException e) {
@@ -35,14 +35,8 @@ public class Task5 {
 
 	}
 
-	static void isPalindrome(int k) {
-		String s = String.valueOf(k);
-		for (int i = 0, j = s.length() - 1; i < s.length() / 2; i++, j--) {
-			if (s.charAt(i) == s.charAt(j)) {
-				System.out.println(s + " ");
-			}
-		}
+	
 
-	}
+	
 
 }
