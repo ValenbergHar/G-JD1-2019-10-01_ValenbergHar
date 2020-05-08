@@ -1,31 +1,36 @@
 package senla.task6;
 
-import java.util.List;
+import java.util.Arrays;
+import java.util.Comparator;
 
-<<<<<<< HEAD
-public class Task6 {
-=======
-public class Backpack {
->>>>>>> fe5ed8a67ba63a3fca8da741b37d41cfb5789dc3
+public class BackPack {
 
 	public static void main(String[] args) {
+		final Item item1 = new Item(4, 40);
+		final Item item2 = new Item(5, 30);
+		final Item item3 = new Item(6, 8);
+		final Item item4 = new Item(10, 54);
 
-		List<Item> items = null;
+		final Item[] items = { item1, item2, item3,item4 };
 
-		items.add(new Item("Книга", 1, 600));
-		items.add(new Item("Бинокль", 2, 5000));
-		items.add(new Item("Аптечка", 4, 1500));
-		items.add(new Item("Ноутбук", 2, 40000));
-		items.add(new Item("Котелок", 1, 500));
+		Arrays.sort(items, Comparator.comparingDouble(Item::valueUnitOfWeight).reversed());
+		System.out.println(Arrays.toString(items));
+		final int W = 10;
+		int weightInBackpack = 0;
+		int valueInBackpack = 0;
+		int currentItem = 0;
 
-		Backpack bp = new Backpack(10.1);
-		bp.makeAllSets(items);
-		List<Item> solve = bp.getBestSet();
-
-		if (solve == null) {
-			System.out.println("There is no result");
-		} else {
-			System.out.println(solve);
+		while (currentItem < items.length && weightInBackpack != W) {
+			if (weightInBackpack + items[currentItem].getWeight() < W) {
+				valueInBackpack += items[currentItem].getValue();
+				weightInBackpack += items[currentItem].getWeight();
+			} else {
+				valueInBackpack += (W - weightInBackpack) / (double) items[currentItem].getWeight()*items[currentItem].getValue();
+				weightInBackpack=W;
+			}
+			currentItem++;
 		}
+		System.out.println( + valueInBackpack);
+
 	}
 }
