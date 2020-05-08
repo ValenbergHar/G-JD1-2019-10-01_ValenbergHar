@@ -2,7 +2,11 @@ package senla.task6;
 
 import java.util.List;
 
+<<<<<<< HEAD
 public class Task6 {
+=======
+public class Backpack {
+>>>>>>> fe5ed8a67ba63a3fca8da741b37d41cfb5789dc3
 
 	public static void main(String[] args) {
 

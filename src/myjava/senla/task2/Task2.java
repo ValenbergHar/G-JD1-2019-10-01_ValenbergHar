@@ -13,26 +13,12 @@ public class Task2 {
 			int b = in.nextInt();
 			System.out.printf(
 					"Greatest Common Divisor: %d;\nLeast Common Multiple: %d.",
-					gcd(a, b), lcm(a, b));
+					Program.gcd(a, b), Program.lcm(a, b));
 		} catch (InputMismatchException e) {
 			System.out.println("Invalid input.");
 		} catch (IllegalArgumentException e) {
 			System.out.println(e.getMessage());
 		}
-	}
-
-	static int gcd(int a, int b) {
-		if (a == 0 && b == 0)
-			throw new IllegalArgumentException(
-					"Parameters a and b are equals to zero.");
-		return b == 0 ? a : gcd(b, a % b);
-	}
-
-	static int lcm(int a, int b) {
-		if (a == 0 && b == 0)
-			throw new IllegalArgumentException(
-					"Parameters a and b are equals to zero.");
-		return a / gcd(a, b) * b;
 	}
 
 }

@@ -17,25 +17,10 @@ public class Tas4 {
 			System.out.println("Enter the word: ");
 			String word = in.nextLine();
 			System.out.printf("The word \"%s\" occurs in the text %d times",
-					word, getWordCount(text, word));
+					word, Program.getWordCount(text, word));
 		} catch (InputMismatchException e) {
 			System.out.println(e.getMessage());
 		}
 	}
 
-	static int getWordCount(String text, String word) {
-		if (word.equals("") || text.equals(""))
-			throw new IllegalArgumentException("Invalid input");
-
-		text = text.toLowerCase();
-		word = word.toLowerCase();
-
-		int wordCount = 0;
-		Matcher matcher = Pattern.compile("\\b" + word + "\\b").matcher(text);
-
-		while (matcher.find()) {
-			wordCount++;
-		}
-		return wordCount;
-	}
 }
