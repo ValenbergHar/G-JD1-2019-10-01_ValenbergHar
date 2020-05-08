@@ -4,13 +4,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class FindInteger {
-	public static  Scanner in = new Scanner(System.in);
+	public static  Scanner intScanner = new Scanner(System.in);
 	
 
 	public static void main(String[] args) {
 
 		try {
-			int n = in.nextInt();
+			int n = intScanner.nextInt();
 			
 			Program.checkIsItInteger(n);
 			Program.checkIsItANaturalNumber(n);

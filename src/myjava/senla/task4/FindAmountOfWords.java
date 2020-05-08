@@ -5,17 +5,17 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Tas4 {
+public class FindAmountOfWords {
 
 	public static void main(String[] args) {
 
 		try {
-			Scanner in = new Scanner(System.in);
+			Scanner stringScanner = new Scanner(System.in);
 			System.out.println("Enter the text: ");
 
-			String text = in.nextLine();
+			String text = stringScanner.nextLine();
 			System.out.println("Enter the word: ");
-			String word = in.nextLine();
+			String word = stringScanner.nextLine();
 			System.out.printf("The word \"%s\" occurs in the text %d times",
 					word, Program.getWordCount(text, word));
 		} catch (InputMismatchException e) {

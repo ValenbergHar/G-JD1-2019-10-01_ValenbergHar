@@ -3,14 +3,14 @@ package senla.task2;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Task2 {
+ class FindGCDAndLCM {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		Scanner intScanner = new Scanner(System.in);
 		System.out.println("Enter two integers: ");
 
 		try {
-			int a = in.nextInt();
-			int b = in.nextInt();
+			int a = intScanner.nextInt();
+			int b = intScanner.nextInt();
 			System.out.printf(
 					"Greatest Common Divisor: %d;\nLeast Common Multiple: %d.",
 					Program.gcd(a, b), Program.lcm(a, b));

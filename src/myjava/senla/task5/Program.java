@@ -1,5 +1,7 @@
 package senla.task5;
 
+
+
 public class Program {
 	static void isPalindrome(int k) {
 		String s = String.valueOf(k);
@@ -8,5 +10,6 @@ public class Program {
 				System.out.println(s + " ");
 			}
 		}
+
 	}
 }

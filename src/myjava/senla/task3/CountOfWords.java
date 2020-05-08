@@ -4,12 +4,13 @@ import java.util.InputMismatchException;
 
 import java.util.Scanner;
 
-public class Task3 {
+public class CountOfWords {
 	public static void main(String[] args) {
 		System.out.println("Enter the sentence: ");
-		Scanner in = new Scanner(System.in);
+		Scanner stringScanner = new Scanner(System.in);
+		
 		try {
-			String sentence = in.nextLine();
+			String sentence = stringScanner.nextLine();
 			System.out.println("Count of words: "
 					+ Program.getCountOfWords(sentence));
 			System.out.println(Program.sorted(sentence));

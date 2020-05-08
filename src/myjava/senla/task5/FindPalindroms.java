@@ -3,18 +3,18 @@ package senla.task5;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Task5 {
+public class FindPalindroms {
 
 	public static void main(String[] args) {
 		System.out.print("Number of digits: ");
-		Scanner in = new Scanner(System.in);
+		Scanner integerScanner = new Scanner(System.in);
 		try {
 
-			int k = in.nextInt();
+			int k = integerScanner.nextInt();
 			int arr[] = new int[k];
 			System.out.print("Enter numbers: ");
 			for (int i = 0; i < k; i++) {
-				arr[i] = in.nextInt();
+				arr[i] = integerScanner.nextInt();
 			}
 
 			System.out.print("Resulting array: ");
@@ -34,9 +34,5 @@ public class Task5 {
 		}
 
 	}
-
-	
-
-	
 
 }
