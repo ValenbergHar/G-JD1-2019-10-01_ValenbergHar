@@ -18,8 +18,8 @@ public class Aggregator {
         items.sort(new Comparator<Item>() {
             @Override
             public int compare(Item o1item, Item o2item) {
-                int o1 = o1item.getRate();
-                int o2 = o2item.getRate();
+            	double o1 = o1item.getRate();
+            	double o2 = o2item.getRate();
                 if (o1 == o2){
                     return 0;
                 }

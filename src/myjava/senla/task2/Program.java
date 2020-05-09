@@ -1,17 +1,24 @@
 package senla.task2;
 
-public class Program {
-	static int gcd(int a, int b) {
-		if (a == 0 && b == 0)
-			throw new IllegalArgumentException(
-					"Parameters a and b are equals to zero.");
-		return b == 0 ? a : gcd(b, a % b);
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+ class Program {
+	public static void main(String[] args) {
+		Scanner intScanner = new Scanner(System.in);
+		System.out.println("Enter two integers: ");
+
+		try {
+			int a = intScanner.nextInt();
+			int b = intScanner.nextInt();
+			System.out.printf(
+					"Greatest Common Divisor: %d;\nLeast Common Multiple: %d.",
+					IntegerUtilits.gcd(a, b), IntegerUtilits.lcm(a, b));
+		} catch (InputMismatchException e) {
+			System.out.println("Invalid input.");
+		} catch (IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
-	static int lcm(int a, int b) {
-		if (a == 0 && b == 0)
-			throw new IllegalArgumentException(
-					"Parameters a and b are equals to zero.");
-		return a / gcd(a, b) * b;
-	}
 }

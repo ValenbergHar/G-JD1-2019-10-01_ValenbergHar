@@ -1,4 +1,4 @@
-package senla.task6;
+package foxford;
 
 public class Item {
 	private double weight;

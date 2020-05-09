@@ -8,9 +8,9 @@ class ItemTests {
 
     @Test
     void getRate_validPriceAndWeight_returnsCorrectRate() {
-        int expected = 20;
+        double expected = 20;
         Item item = new Item(5, 4);
-        int actual = item.getRate();
+        double actual = item.getRate();
         Assertions.assertEquals(expected, actual);
     }
 }

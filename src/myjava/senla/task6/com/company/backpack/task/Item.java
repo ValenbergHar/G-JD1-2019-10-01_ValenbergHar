@@ -1,23 +1,23 @@
 package senla.task6.com.company.backpack.task;
 
 public class Item extends Entity{
-    private int price;
-    private int weight;
+    private double price;
+    private double weight;
 
-    public Item(int price, int weight){
+    public Item(double price, double weight){
         this.price = price;
         this.weight = weight;
     }
 
-    public int getPrice(){
+    public double getPrice(){
         return price;
     }
 
-    public int getWeight(){
+    public double getWeight(){
         return weight;
     }
 
-    public int getRate(){
-        return price * weight;
+    public double getRate(){
+        return price / weight;
     }
 }

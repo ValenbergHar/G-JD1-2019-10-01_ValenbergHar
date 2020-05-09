@@ -1,22 +1,26 @@
 package senla.task4;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Program {
-	static int getWordCount(String text, String word) {
-		if (word.equals("") || text.equals(""))
-			throw new IllegalArgumentException("Invalid input");
 
-		text = text.toLowerCase();
-		word = word.toLowerCase();
+	public static void main(String[] args) {
 
-		int wordCount = 0;
-		Matcher matcher = Pattern.compile("\\b" + word + "\\b").matcher(text);
+		try {
+			Scanner stringScanner = new Scanner(System.in);
+			System.out.println("Enter the text: ");
 
-		while (matcher.find()) {
-			wordCount++;
+			String text = stringScanner.nextLine();
+			System.out.println("Enter the word: ");
+			String word = stringScanner.nextLine();
+			System.out.printf("The word \"%s\" occurs in the text %d times", word,
+					StringsUtilits.getWordCount(text, word));
+		} catch (InputMismatchException e) {
+			System.out.println(e.getMessage());
 		}
-		return wordCount;
 	}
+
 }

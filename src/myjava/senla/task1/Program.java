@@ -1,38 +1,27 @@
 package senla.task1;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Program {
-	public static void checkIsItInteger(int n) {
-		if (n % 1 == 0) {
-			System.out.println(n + " is integer.");
-		}
-	}
+	public static Scanner intScanner = new Scanner(System.in);
 
-	public static void checkIsItANaturalNumber(int n) {
-		int var = 2;
-		if (n > 1) {
-			if (n % var != 0) {
-				var++;
-				checkIsItANaturalNumber(n);
-			} else if (n % var == 0) {
-				printIsItNaturalNumber(var, n);
-			}
+	public static void main(String[] args) {
+		System.out.println("Enter an integer: ");
+
+		try {
+			int n = intScanner.nextInt();
+			printAnswer(n);
+
+		} catch (InputMismatchException e) {
+			System.out.println("Please, put an integer");
 		}
 
 	}
 
-	public static void printIsItNaturalNumber(int var, int n) {
-		if (var == n) {
-			System.out.println(n + " is a natural number.");
-		} else {
-			System.out.println(n + " is not a natural number.");
-		}
-	}
+	private static void printAnswer(int i) {
 
-	public static void checkIsEvenOrOdd(int n) {
-		if (n % 2 == 0) {
-			System.out.println(n + " is even number.");
-		} else {
-			System.out.println(n + " is odd number.");
-		}
+		System.out.printf("%d is %s and %s.", i, IntegerUtilits.isPrime(i) ? "prime" : "composite",
+				IntegerUtilits.isEven(i) ? "even" : "odd");
 	}
 }

@@ -1,4 +1,4 @@
-package senla.task6;
+package foxford;
 
 import java.util.Arrays;
 import java.util.Comparator;
