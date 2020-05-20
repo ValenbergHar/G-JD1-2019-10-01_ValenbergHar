@@ -7,15 +7,46 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="musicBean"
+    <context:property-placeholder location="musicPlayer.properties"/>
+    <bean id="musicBean1"
           class="org.example.ClassicalMusic">
     </bean>
 
-    <!-- dependencies injection -->
+    <bean id="musicBean2"
+          class="org.example.RapMusic">
+    </bean>
+
+    <bean id="musicBean3"
+          class="org.example.RockMusic">
+    </bean>
+
     <bean id="musicPlayer"
           class="org.example.MusicPlayer">
-          <constructor-arg ref="musicBean" />
-    </bean>
+        <property name="musicList">
+            <list>
+                <ref bean="musicBean1"/>
+                <ref bean="musicBean2"/>
+                <ref bean="musicBean3"/>
+            </list>
+        </property>
+
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
+
+
+
+    <!--  <bean id="musicBean"
+           class="org.example.ClassicalMusic">
+     </bean>-->
+
+     <!-- dependencies injection -->
+    <!--   <bean id="musicPlayer"
+            class="org.example.MusicPlayer">
+          <property name="music" ref="musicBean"/>
+          <property name="name" value="${musicPlayer.name}"/>
+          <property name="volume" value="${musicPlayer.volume}"/>-->
+        <!-- <constructor-arg ref="musicBean" />   for constructor-->
+  </bean>
 
 
 </beans>
