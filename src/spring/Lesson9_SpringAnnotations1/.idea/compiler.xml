@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Lesson7_Scope" />
         <module name="alishev" />
-        <module name="Lesson9_SpringAnnotations1" />
         <module name="Lesson8_InitDestroyAndFactory" />
+        <module name="Lesson9_SpringAnnotations1" />
       </profile>
     </annotationProcessing>
   </component>
