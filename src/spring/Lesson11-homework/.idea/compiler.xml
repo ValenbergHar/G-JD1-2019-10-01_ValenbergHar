@@ -6,11 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Lesson7_Scope" />
-        <module name="alishev" />
-        <module name="Lesson9_SpringAnnotations1" />
-        <module name="Lesson10_SpringAnnotations1_autowired" />
-        <module name="Lesson8_InitDestroyAndFactory" />
+        <module name="Lesson11-homework" />
       </profile>
     </annotationProcessing>
   </component>
