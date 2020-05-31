@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:src" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:src" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:spring" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:src" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:spring" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Lesson15.SpringMVCApp1" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:src" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:spring" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Lesson16.SpringMVCAppJavaConfig" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:src" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:spring" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Lesson17.SpringControllersIntro" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cda8b862-2865-4022-b797-10e3671a0a10" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1cdSrAAlYAVMGfQJikOF2p6I1bd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ReverseTest">
+    <configuration name="Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Reverse" />
+      <module name="niamchynski" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="niamchynski" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReverseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="niamchynski" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReverseTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReverseTest" />
+        <item itemvalue="Application.Reverse" />
+        <item itemvalue="JUnit.ReverseTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cda8b862-2865-4022-b797-10e3671a0a10" name="Default Changelist" comment="" />
+      <created>1590857173425</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590857173425</updated>
+      <workItem from="1590857176726" duration="4495000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="547" y="290" key="#Tomcat_Server" timestamp="1590863282327">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="547" y="290" key="#Tomcat_Server/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863282327" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1590863336670">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863336670" />
+    <state width="1493" height="327" key="GridCell.Tab.0.bottom" timestamp="1590863356696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356696" />
+    <state width="1493" height="327" key="GridCell.Tab.0.center" timestamp="1590863356696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.0.center/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356696" />
+    <state width="1493" height="327" key="GridCell.Tab.0.left" timestamp="1590863356696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.0.left/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356696" />
+    <state width="1493" height="327" key="GridCell.Tab.0.right" timestamp="1590863356696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.0.right/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356696" />
+    <state width="1493" height="327" key="GridCell.Tab.1.bottom" timestamp="1590863356698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356698" />
+    <state width="1493" height="327" key="GridCell.Tab.1.center" timestamp="1590863356697">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.1.center/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356697" />
+    <state width="1493" height="327" key="GridCell.Tab.1.left" timestamp="1590863356696">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.1.left/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356696" />
+    <state width="1493" height="327" key="GridCell.Tab.1.right" timestamp="1590863356698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="327" key="GridCell.Tab.1.right/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863356698" />
+    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590858228335">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="304" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590858228335" />
+    <state x="540" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1590858207737">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590858207737" />
+    <state x="209" y="0" key="new project wizard" timestamp="1590863349754">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1590863349754" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Reverse.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
