@@ -3,7 +3,7 @@ package com.company;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Main {
+public class Mcad {
     private void solve(Scanner in, PrintWriter out) {
         int v = in.nextInt();
         int t = in.nextInt();
@@ -20,7 +20,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        new Main().run();
+        new Mcad().run();
 
     }
 
