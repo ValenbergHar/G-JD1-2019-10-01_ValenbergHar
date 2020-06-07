@@ -13,12 +13,15 @@ import androidx.appcompat.app.AppCompatActivity;
 public class StopwatchActivity extends AppCompatActivity {
     private int seconds = 0;
     private boolean running;
+    private boolean wasRunning;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         if (savedInstanceState != null) {
             seconds = savedInstanceState.getInt("seconds");
             running = savedInstanceState.getBoolean("running");
+            wasRunning = savedInstanceState.getBoolean("wasRunning");
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stopwatch);
@@ -26,12 +29,42 @@ public class StopwatchActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+        wasRunning = running;
+        running = false;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (wasRunning) {
+            running = true;
+        }
+    }
+
+    @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("seconds", seconds);
         outState.putBoolean("running", running);
+        outState.putBoolean("wasRunning", wasRunning);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(wasRunning){
+            running = true;
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        wasRunning = running;
+        running = false;
+    }
 
     private void runTimer() {
         final TextView timeView = findViewById(R.id.time_view);
