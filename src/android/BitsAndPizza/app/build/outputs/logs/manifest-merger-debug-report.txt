@@ -1,0 +1,145 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cb20b76ed225fe8217fdebe6b4cd159d\constraint-layout-1.0.2\AndroidManifest.xml:2:1-11:12
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:4:5-39
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+	xmlns:dist
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:3:5-61
+	android:versionCode
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:2:11-69
+dist:module
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:6:5-40
+	dist:instant
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:6:18-37
+application
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:8:5-22:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cb20b76ed225fe8217fdebe6b4cd159d\constraint-layout-1.0.2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cb20b76ed225fe8217fdebe6b4cd159d\constraint-layout-1.0.2\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.bitsandpizza.MainActivity
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:15:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cb20b76ed225fe8217fdebe6b4cd159d\constraint-layout-1.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cb20b76ed225fe8217fdebe6b4cd159d\constraint-layout-1.0.2\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		ADDED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\8d4a9bc49bdc17eb3659263d0c21e5e5\animated-vector-drawable-25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\85af815577947965c5f52042ff17f63d\support-vector-drawable-25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\76a028669807120c20e2f5145779265a\support-v4-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\a659ec828d3dee71ce1654738b592e97\support-fragment-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\4b70a6bb2a7ba0ab3e5727cedeb6997e\support-media-compat-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\559b28e02efa0508dc23e64445812ab3\support-core-utils-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\79ffe674180bb71b914b664b25bfd087\support-core-ui-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\cd5f504f1ad7bd08caeed5e0561cca34\support-compat-25.3.1\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:26:9-47

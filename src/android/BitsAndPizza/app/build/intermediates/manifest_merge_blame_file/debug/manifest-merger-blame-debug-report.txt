@@ -1,0 +1,56 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.bitsandpizza"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="19"
+9-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml
+11
+12    <dist:module dist:instant="true" />
+12-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:6:5-40
+12-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:6:18-37
+13
+14    <meta-data
+14-->[com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:25:5-27:34
+15        android:name="android.support.VERSION"
+15-->[com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:26:9-47
+16        android:value="25.3.1" />
+16-->[com.android.support:appcompat-v7:25.3.1] C:\Users\Валерий\.gradle\caches\transforms-2\files-2.1\be37f51fafd9910745bee0ef9b4536a0\appcompat-v7-25.3.1\AndroidManifest.xml:27:9-31
+17
+18    <application
+18-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:8:5-22:19
+19        android:allowBackup="true"
+19-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:9:9-35
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:10:9-43
+22        android:label="@string/app_name"
+22-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:11:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:12:9-54
+24        android:supportsRtl="true"
+24-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:13:9-35
+25        android:theme="@style/AppTheme" >
+25-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:14:9-40
+26        <activity android:name="com.example.bitsandpizza.MainActivity" >
+26-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:15:9-21:20
+26-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:15:19-47
+27            <intent-filter>
+27-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:16:13-20:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:17:17-69
+28-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:17:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:19:17-77
+30-->D:\Education\Java\MaskevichValery\src\android\BitsAndPizza\app\src\main\AndroidManifest.xml:19:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>
