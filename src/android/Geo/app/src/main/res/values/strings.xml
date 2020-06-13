@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Geo</string>
+    <string name="app_in_name">Valenberg</string>
+    <string name="app_name_after">Haradzienski</string>
+    <string name="textBottom">Увайдзіце ва ўліковы запіс</string>
+    <string name="btnSignIn">Увайсьці</string>
+    <string name="btnRegister">Зарэгістравацца</string>
 </resources>
