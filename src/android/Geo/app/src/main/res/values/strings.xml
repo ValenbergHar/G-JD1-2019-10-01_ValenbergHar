@@ -5,4 +5,8 @@
     <string name="textBottom">Увайдзіце ва ўліковы запіс</string>
     <string name="btnSignIn">Увайсьці</string>
     <string name="btnRegister">Зарэгістравацца</string>
+    <string name="email">Email</string>
+    <string name="password" >Password</string>
+    <string name="put_a_name">Put a name</string>
+    <string name="phone">Put a number</string>
 </resources>
