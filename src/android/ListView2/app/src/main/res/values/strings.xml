@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ListView</string>
+    
+    <string-array name="Belarus">
+        <item>Harodnia</item>
+        <item>Miensk</item>
+        <item>Viciebsk</item>
+        <item>Masty</item>
+    </string-array>
+</resources>
