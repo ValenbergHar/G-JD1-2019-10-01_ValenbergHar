@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <!-- Обрезанная кнопка -->
+    <style name="CuttedButton" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/CuttedShapeAppearance</item>
+    </style>
+    <style name="CuttedShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerSizeBottomLeft">24dp</item>
+    </style>
+
+
+    <!-- Toggle Button Icon -->
+    <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+
+    <!-- Стиль простого диалога -->
+    <style name="CustomDialogSimple" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/Dialog.Title.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Dialog.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Dialog.Button.Negative</item>
+    </style>
+
+    <!-- Стиль диалога с выбором-->
+    <style name="CustomDialogChoice" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/Dialog.Title.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Dialog.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Dialog.Button.Negative</item>
+    </style>
+
+
+    <style name="Dialog.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Dialog.Button.Positive" parent="Widget.MaterialComponents.Button">
+        <item name="android:fillColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Dialog.Button.Negative" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+
+
+
+
+</resources>

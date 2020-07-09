@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/ac_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите товар"
+            android:completionThreshold="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/ac_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите товар"
+            android:completionThreshold="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>

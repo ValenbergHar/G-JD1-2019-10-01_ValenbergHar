@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_like"
+        android:icon="@drawable/ic_like"
+        app:showAsAction="always"
+        android:orderInCategory="10"
+        android:title="@string/menu_like" />
+
+    <group
+        android:id="@+id/group_size"
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/menu_size"
+            android:enabled="false"
+            android:checkable="false" />
+        <item
+            android:id="@+id/menu_small"
+            android:title="@string/menu_small"
+            android:onClick="onSizeChoice" />
+
+        <item
+            android:id="@+id/menu_big"
+            android:title="@string/menu_big"
+            android:onClick="onSizeChoice" />
+    </group>
+
+    <group
+        android:id="@+id/group_color"
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/menu_color"
+            android:enabled="false"
+            android:checkable="false"/>
+        <item
+            android:id="@+id/menu_green"
+            android:title="@string/menu_green"
+            android:onClick="onColorChoice" />
+        <item
+            android:id="@+id/menu_red"
+            android:title="@string/menu_red"
+            android:onClick="onColorChoice" />
+    </group>
+
+</menu>

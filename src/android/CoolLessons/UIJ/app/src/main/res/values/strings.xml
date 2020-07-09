@@ -1,0 +1,190 @@
+<resources>
+    <string name="app_name">UIJ</string>
+
+    <string name="image_description">Image</string>
+
+    <!-- Types -->
+    <string-array name="types">
+        <item>Buttons</item>
+        <item>Text Field</item>
+        <item>Text Field Multiple</item>
+        <item>Check Box</item>
+        <item>Radio Button</item>
+        <item>FAB Extended</item>
+        <item>Switch Button</item>
+        <item>Date Picker</item>
+        <item>Date Picker MDC</item>
+        <item>Time Picker</item>
+        <item>Toast базовый</item>
+        <item>Toast базовый вверху</item>
+        <item>Toast базовый в центре</item>
+        <item>Toast кастомный</item>
+        <item>Toast кастомный с границей</item>
+        <item>Toast кастомный с картинкой</item>
+        <item>Toast 1 через библиотеку</item>
+        <item>Toast 2 через библиотеку</item>
+        <item>SnackBar базовый</item>
+        <item>SnackBar с действием</item>
+        <item>SnackBar кастомизированный</item>
+        <item>SnackBar библиотечный</item>
+        <item>SnackBar библиотечный кастомизированный</item>
+        <item>Диалог с одной кнопкой</item>
+        <item>Диалог с двумя кнопками</item>
+        <item>Диалог с тремя кнопками</item>
+        <item>Диалог с одной кнопкой и иконкой</item>
+        <item>Диалог с полем ввода</item>
+        <item>Диалог с единичным выбором</item>
+        <item>Диалог с радиокнопкой</item>
+        <item>Диалог с множественным выбором</item>
+        <item>Диалог кастомизированный</item>
+        <item>Диалог кастомизированный с выбором</item>
+        <item>Меню</item>
+        <item>Меню с иконками</item>
+        <item>Всплывающее меню</item>
+        <item>Группа меню</item>
+        <item>AutoCompleteTextView</item>
+        <item>Chips</item>
+    </string-array>
+
+    <string-array name="product_array">
+        <item>Яблоко</item>
+        <item>Груша</item>
+        <item>Слива</item>
+        <item>Вишня</item>
+        <item>Арбуз</item>
+        <item>Апельсин</item>
+        <item>Мандарин</item>
+        <item>Лайм</item>
+        <item>Яблоко</item>
+        <item>Груша</item>
+        <item>Слива</item>
+        <item>Вишня</item>
+        <item>Арбуз</item>
+        <item>Апельсин</item>
+        <item>Мандарин</item>
+        <item>Лайм</item>
+    </string-array>
+
+    <string-array name="fruit_array">
+        <item>Яблоко</item>
+        <item>Груша</item>
+        <item>Слива</item>
+        <item>Вишня</item>
+    </string-array>
+
+
+    <!-- Buttons -->
+    <string name="btn_text">Кнопка</string>
+    <string name="btn_simple">простая кнопка</string>
+    <string name="btn_default">Default Button</string>
+    <string name="btn_rounded">Закругленная</string>
+    <string name="btn_cutted">ОбреЗанная</string>
+    <string name="btn_texted">Text Button</string>
+    <string name="btn_trspt_bdless">OutlinedButton</string>
+    <string name="btn_error_check">Кнопка проверки</string>
+    <string name="btn_phone_mask">Показать телефон</string>
+    <string name="btn_email">Отправить</string>
+    <string name="btn_order">Заказать</string>
+    <string name="btn_date">Установить дату</string>
+    <string name="btn_time">Установить время</string>
+    <string name="btn_toggle_off">Выключено</string>
+    <string name="btn_toggle_on">Включено</string>
+    <string name="button_action">Кнопка действий</string>
+
+    <!-- Toast -->
+    <string name="toast_button">Кнопка нажата</string>
+    <string name="toast_button_iconed">Давай знакомиться!</string>
+    <string name="toast_error_email">Не Email!</string>
+    <string name="toast_send_email">Email отправлен!</string>
+    <string name="toast_on">Включено!</string>
+    <string name="toast_off">Выключено!</string>
+    <string name="toast_basic">Я - простой toast!</string>
+    <string name="toast_custom">Я - кастомный toast!</string>
+    <string name="toast_picture">Познакомимся?</string>
+    <string name="toast_ok">Вы нажали ОК</string>
+    <string name="toast_confirm">Подтверждено!</string>
+    <string name="toast_cancel">Отменено!</string>
+    <string name="toast_latter">Позже</string>
+    <string name="toast_empty">Пустое поле!</string>
+    <string name="toast_no_choice">Ничего не выбрано!</string>
+    <string name="toast_nothing">Просто ничего!</string>
+    <string name="toast_like">L I K E !</string>
+
+    <!-- SnackBar -->
+    <string name="snackbar_text_1">Базовый SnackBar!</string>
+    <string name="snackbar_text_2">Удалено!</string>
+    <string name="snackbar_text_3">Отменить</string>
+    <string name="snackbar_text_4">Отменено!</string>
+
+    <!-- Text fields -->
+    <string name="tf_filled">Filled text&#8230;</string>
+    <string name="tf_outlined">Outlined text&#8230;</string>
+    <string name="tf_multy_row">Строчки&#8230;</string>
+    <string name="tf_password">Пароль&#8230;</string>
+    <string name="tf_number">Число&#8230;</string>
+    <string name="et_phone_mask">Телефон маска&#8230;</string>
+    <string name="tf_icon">Имя&#8230;</string>
+
+    <!-- Check Box -->
+    <string name="ch_fruit">Фрукты</string>
+    <string name="ch_veges">Овощи</string>
+    <string name="ch_berry">Ягоды</string>
+    <string name="ch_water">Вода</string>
+
+    <!-- Radio Button -->
+    <string name="rb_fruit">Фрукты</string>
+    <string name="rb_veges">Овощи</string>
+    <string name="rb_berry">Ягоды</string>
+    <string name="rb_water">Вода</string>
+
+    <!-- Text View -->
+    <string name="tv_radio_title">Сделайте Ваш выбор:</string>
+    <string name="tv_date">Дата</string>
+    <string name="tv_time">Время</string>
+    <string name="tv_switch_off">Двигатель выключен</string>
+    <string name="tv_switch_on">Двигатель включен</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title">Диалог</string>
+    <string name="dialog_one_text">Диалог с одной кнопкой</string>
+    <string name="dialog_two_text">Диалог с двумя кнопками и титулом</string>
+    <string name="dialog_three_text">Диалог с тремя кнопками и титулом</string>
+    <string name="dialog_coffee_text">Пора пить кофе. Особенно с друзьями.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Отменить</string>
+    <string name="dialog_latter">Позже</string>
+    <string name="dialog_hint_login">Логин&#8230;</string>
+    <string name="dialog_hint_password">Пароль&#8230;</string>
+    <string name="dialog_choice">Сделайте выбор</string>
+
+    <!-- Titles -->
+    <string name="title_menu_base">Меню базовое</string>
+    <string name="title_menu_icons">Меню с иконками</string>
+    <string name="title_menu_popup">Popup Menu</string>
+    <string name="title_menu_group">Menu Group</string>
+    <string name="title_abouts">Информация</string>
+
+    <string name="about_text">Учебный проект о разных видах UI</string>
+    <string name="just_text">Просто текст</string>
+
+    <!-- Menus -->
+    <string name="menu_phone">phone</string>
+    <string name="menu_more">more</string>
+    <string name="menu_about">Информация</string>
+    <string name="menu_register">Зарегистрироваться</string>
+    <string name="menu_login">Войти</string>
+    <string name="menu_change">Сменить текст</string>
+    <string name="menu_like">like</string>
+    <string name="menu_nothing">Ничего не делать</string>
+    <string name="menu_size">Размер:</string>
+    <string name="menu_small">Маленький</string>
+    <string name="menu_big">Большой</string>
+    <string name="menu_color">Цвет:</string>
+    <string name="menu_green">Зеленый</string>
+    <string name="menu_red">Красный</string>
+
+    <!-- Chips -->
+    <string name="chip_text_1">Это Chip</string>
+
+
+</resources>

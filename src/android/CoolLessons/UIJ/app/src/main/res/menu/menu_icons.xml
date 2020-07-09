@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".MenuBActivity" >
+
+    <item
+        android:id="@+id/menu_phone"
+        android:icon="@drawable/ic_phone"
+        android:title="@string/menu_phone"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/menu_more"
+        android:title="@string/menu_more"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_more">
+
+        <menu>
+            <item
+                android:id="@+id/menu_about"
+                android:icon="@drawable/ic_info"
+                android:title="@string/menu_about" />
+            <item
+                android:id="@+id/menu_register"
+
+                android:icon="@drawable/ic_register"
+                android:title="@string/menu_register" />
+            <item
+                android:id="@+id/menu_change"
+                android:icon="@drawable/ic_change"
+                android:title="@string/menu_change" />
+        </menu>
+
+    </item>
+
+</menu>

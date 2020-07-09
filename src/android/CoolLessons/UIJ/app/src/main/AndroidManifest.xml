@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="em.kh.ua.uij">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.ChipActivity"></activity>
+        <activity android:name=".activity.FabExtActivity" />
+        <activity android:name=".datepicker.DatePickerActivity" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ButtonActivity" />
+        <activity android:name=".activity.TextFieldActivity" />
+        <activity android:name=".activity.CheckActivity" />
+        <activity android:name=".activity.RadioActivity" />
+        <activity android:name=".activity.SwitchActivity" />
+        <activity android:name=".activity.DateActivity" />
+        <activity android:name=".activity.TimeActivity" />
+        <activity android:name=".activity.TextFieldMultyActivity" />
+        <activity
+            android:name=".activity.MenuBaseActivity"
+            android:label="@string/title_menu_base" />
+        <activity
+            android:name=".activity.MenuIconsActivity"
+            android:label="@string/title_menu_icons" />
+        <activity
+            android:name=".activity.MenuPopupActivity"
+            android:label="@string/title_menu_popup" />
+        <activity
+            android:name=".activity.AboutsActivity"
+            android:label="@string/title_abouts" />
+        <activity
+            android:name=".activity.MenuGroupActivity"
+            android:label="@string/title_menu_group" />
+        <activity android:name=".activity.AutoCompleActivity" />
+    </application>
+
+</manifest>

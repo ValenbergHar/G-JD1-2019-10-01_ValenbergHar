@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activity.ChipActivity">
+
+    <!--
+    Chip представляет собой сложную сущность в небольшом блоке, таком как контакт.
+    Это закругленная кнопка, состоящая из метки, дополнительной иконки
+    и дополнительной иконки закрытия.
+    Chip может быть либо нажата, либо переключена, если ее можно нажать.
+    -->
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chip_text_1"/>
+
+    <!-- Action Chip
+    Для действий в контексте с основным контентом.
+    -->
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_2"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipBackgroundColor="@color/colorOrange"
+        app:chipIcon="@drawable/ic_add"
+        android:text="@string/chip_text_1"/>
+
+    <!-- Entry Chip
+    Используйте Entry Chip для представления сложной информации
+    в компактной форме.
+    Этот стиль обычно содержит опциональную иконку чипа, опциональную иконку закрытия,
+    и опционально нажимаемый.
+     -->
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_3"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipIcon="@drawable/ic_person"
+        android:text="@string/chip_text_1"/>
+
+    <!-- ChipGroup
+    ChipGroup содержит набор чипов и управляет их макетом и областью множественного
+    исключения, аналогично RadioGroup.
+
+    Choice Chip
+    Помочь пользователям сделать один выбор из конечного набора опций.
+
+    ChipGroup может быть настроен так, чтобы разрешать нажатие только одного чипа
+    одновременно с помощью атрибута app: singleSelection.
+    -->
+
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup1"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choice1"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice 1"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choice2"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice 2"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choice3"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice 3"/>
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <!-- Filter Chip
+    Используйте фильтры, содержащие теги или описательные слова,
+    чтобы отфильтровать коллекцию.
+    -->
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup2"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter 1"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter 2"/>
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter3"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter 3"/>
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <!-- Стилизованный Chip  -->
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_4"
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipBackgroundColor="@color/colorGreenLite"
+        app:chipIcon="@drawable/ic_add"
+        app:chipIconTint="@color/colorOrange"
+        app:chipIconSize="28dp"
+        app:iconStartPadding="16dp"
+        app:textEndPadding="16dp"
+        app:chipStrokeColor="@color/colorPrimary"
+        app:chipStrokeWidth="2dp"
+        app:chipMinHeight="48dp"
+        android:textColor="@color/colorOrange"
+        android:text="@string/chip_text_1"/>
+
+</LinearLayout>

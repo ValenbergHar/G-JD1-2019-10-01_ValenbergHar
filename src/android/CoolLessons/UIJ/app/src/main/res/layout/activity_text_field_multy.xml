@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".activity.TextFieldMultyActivity">
+
+    <!-- Text field с несколькими строками
+    android:lines="3" - количество строк установленных в виде
+    android:maxLines="5" - максимальное количество строк
+    android:gravity="top|start" - расположение точки ввода
+    android:scrollbars="vertical" - прокрутка
+     -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="@string/tf_multy_row">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/et_margin"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:gravity="top|start"
+            android:scrollbars="vertical" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

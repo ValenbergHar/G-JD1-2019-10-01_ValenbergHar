@@ -1,10 +1,13 @@
 package com.example.animals;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,8 +48,37 @@ public class MainActivity extends AppCompatActivity {
                 null,
                 null,
                 orderBy
-                );
+        );
 
         adapter.swapCursor(cursor);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.main_arrow_up:
+                orderBy = AnimalsTable.COLUMN_ANIMAL + " asc ";
+                updateCursor();
+                return true;
+            case R.id.main_arrow_down:
+                orderBy = AnimalsTable.COLUMN_ANIMAL + " desc ";
+                updateCursor();
+                return true;
+            case R.id.main_search:
+
+                return true;
+            case R.id.main_plus:
+
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

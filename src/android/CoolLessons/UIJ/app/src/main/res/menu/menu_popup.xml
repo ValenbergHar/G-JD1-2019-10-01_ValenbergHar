@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MenuCActivity" >
+
+    <item
+        android:id="@+id/menu_register"
+        android:title="@string/menu_register" />
+    <item
+        android:id="@+id/menu_change"
+        android:title="@string/menu_change" />
+    <item
+        android:id="@+id/menu_nothing"
+        android:title="@string/menu_nothing" />
+
+</menu>

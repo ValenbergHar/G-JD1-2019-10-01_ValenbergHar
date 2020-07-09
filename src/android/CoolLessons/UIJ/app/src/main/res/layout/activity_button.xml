@@ -1,0 +1,266 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/btn_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <!-- Из документации:
+        "There are four types of buttons:
+        Text button
+        Outlined button
+        Contained button
+        Toggle button"
+        -->
+
+
+
+        <!-- Contained button
+        Contained button имеют высокий акцент, отличаются использованием возвышения
+        и заполнения. Они содержат действия, которые являются основными для вашего
+        приложения.
+        Примечание Contained button является стилем по умолчанию,
+        если стиль не установлен.
+        -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            android:text="@string/btn_simple"
+            android:textColor="@color/colorWhite" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_default"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            android:text="@string/btn_default"
+            android:textColor="@color/colorWhite" />
+
+
+
+        <!--
+          Закругленная Кнопка app:cornerRadius="[значение]dp"
+          Разная высота букв android:textAllCaps="false"
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            app:cornerRadius="24dp"
+            android:text="@string/btn_rounded"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite" />
+
+
+        <!--
+          Обрезанная Кнопка
+          Разная высота букв android:textAllCaps="false"
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cutted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            android:padding="16dp"
+            style="@style/CuttedButton"
+            android:text="@string/btn_cutted"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite" />
+
+
+
+        <!--
+         TextButton (Текстовая кнопка)
+         Текстовые кнопки обычно используются для менее выраженных действий.
+         По умолчанию android:textColor="@color/colorPrimary"
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_texted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:text="@string/btn_texted" />
+
+
+        <!--
+         OutlinedButton (Выделенная/Очерченная Кнопка)
+         Выделенные кнопки являются кнопками со средним акцентом.
+         Они содержат действия, которые важны, но не являются основным
+         действием в приложении.
+         По умолчанию android:textColor="@color/colorPrimary"
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_outlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_margin="@dimen/btn_margin"
+            android:text="@string/btn_trspt_bdless" />
+
+        <!--
+         OutlinedButton стилизованная
+         -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_outlined1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/colorOrange"
+            app:strokeWidth="2dp"
+            app:backgroundTint="@color/colorGreenLite"
+            android:layout_margin="@dimen/btn_margin"
+            android:text="@string/btn_trspt_bdless" />
+
+
+        <!--
+         Кнопка с иконкой
+         Отступ между значком и текстом кнопки app:iconPadding
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_iconed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            app:icon="@drawable/ic_face"
+            android:text="@string/btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:cornerRadius="24dp"
+            android:padding="16dp"
+            app:iconPadding="16dp"/>
+
+
+        <!--
+         Кнопка с иконкой
+         Иконка справа от текста app:iconGravity="textEnd"
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_iconed_rt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/btn_margin"
+            app:icon="@drawable/ic_face"
+            android:text="@string/btn_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:cornerRadius="24dp"
+            android:padding="16dp"
+            app:iconPadding="16dp"
+            app:iconGravity="textEnd"/>
+
+
+        <!--
+         Текстовая кнопка с иконкой
+
+         По умолчанию
+         android:textColor="@color/colorPrimary"
+         app:iconTint="@color/colorPrimary" (цвет иконки)
+
+         Можно поменять, например, цвет иконки
+         app:iconTint="@color/colorAccent"
+         или
+         app:iconTint="@color/colorOrange"
+         -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_text_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            app:icon="@drawable/ic_face"
+            android:layout_margin="@dimen/btn_margin"
+            android:text="@string/btn_text"
+            android:textSize="18sp"/>
+
+
+
+        <!-- Toggle Buttons
+        Кнопки переключения можно использовать для выбора из группы вариантов.
+        Типы toggle buttons:
+            Toggle button
+            Icon
+        -->
+
+        <!-- Toggle button -->
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 1"
+                style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 2"
+                style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 3"
+                style="?attr/materialButtonOutlinedStyle" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+        <!-- Icon -->
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_face"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_like"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_flower"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
