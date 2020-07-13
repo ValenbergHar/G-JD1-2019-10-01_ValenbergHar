@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PagingApp</string>
+    <string name="productImage">Product image</string>
+    <string name="txt_price">Price</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_description">Description</string>
+</resources>
