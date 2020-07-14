@@ -51,7 +51,11 @@ class Main {
                 new SimpleComparableStudent("Igor", 111),
                 new SimpleComparableStudent("Peter", 300),
         };
-        Arrays.sort(myStudents, new SimpleComparatorStudent());
+        //по группе
+        Arrays.sort(myStudents);
+
+        //по имени
+        //Arrays.sort(myStudents, new SimpleComparatorStudent());
 
         for (SimpleComparableStudent myStudent : myStudents) {
             System.out.println(myStudent);

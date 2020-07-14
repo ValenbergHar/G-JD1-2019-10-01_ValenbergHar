@@ -133,7 +133,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../itvdn/001_Samples" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -349,10 +349,10 @@
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1594670969659" />
     <state x="2498" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594708181637" />
-    <state x="685" y="194" key="FileChooserDialogImpl" timestamp="1594714344993">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1594742950398">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1594660486699" />
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1594742950398" />
     <state x="685" y="194" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1594714344993" />
     <state x="2605" y="201" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@1920.0.1920.1080" timestamp="1594708131862" />
     <state width="1292" height="290" key="GridCell.Tab.0.bottom" timestamp="1594714355929">
