@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoolLessons-DeSL.iml" filepath="$PROJECT_DIR$/.idea/modules/CoolLessons-DeSL.iml" group="DeSL" />
       <module fileurl="file://$PROJECT_DIR$/DeSL.iml" filepath="$PROJECT_DIR$/DeSL.iml" group="DeSL" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DeSL-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DeSL-app.iml" group="DeSL/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="DeSL/app" />
     </modules>
   </component>
