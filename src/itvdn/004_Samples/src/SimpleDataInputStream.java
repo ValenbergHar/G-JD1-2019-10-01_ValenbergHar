@@ -5,8 +5,8 @@ import java.io.*;
  */
 public class SimpleDataInputStream {
     public static void main(String[] args) {
-        try (DataOutputStream out = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("dataOut.txt")));
-             DataInputStream in = new DataInputStream(new BufferedInputStream(new FileInputStream("dataOut.txt")))) {
+        try (DataOutputStream out = new DataOutputStream(new BufferedOutputStream(new FileOutputStream("D:\\1111.docx")));
+             DataInputStream in = new DataInputStream(new BufferedInputStream(new FileInputStream("D:\\1111.docx")))) {
             out.writeShort(1200);
             out.writeInt(1111);
             out.writeLong(10L);

@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class SimpleBufferReader {
     public static void main(String[] args) throws IOException {
 //        try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))){
-//            int num = Integer.parseInt(br.readLine());
+   //         int num = Integer.parseInt(br.readLine());
 //            System.out.println(num);
 //        } catch (IOException e) {
 //            e.printStackTrace();
