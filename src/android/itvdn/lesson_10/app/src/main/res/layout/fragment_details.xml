@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="productEntity"
+            type="com.kalashnyk.denys.paging.repository.database.entities.ProductEntity" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/product_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                />
+
+            <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+                android:id="@+id/product_pager_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="@dimen/indentation_16"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_rv_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:drawableLeft="@drawable/ic_dollar_sign_in_circle"
+            android:layout_marginStart="@dimen/indentation_16"
+            android:layout_marginEnd="@dimen/indentation_16"
+            android:textSize="@dimen/txt_size_20"
+            android:text="@{productEntity.price.toString()}"/>
+
+        <TextView
+            android:id="@+id/tv_rv_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:textColor="@color/primaryText"
+            android:layout_marginStart="@dimen/indentation_16"
+            android:layout_marginEnd="@dimen/indentation_16"
+            android:layout_marginTop="@dimen/indentation_8"
+            android:textSize="@dimen/txt_size_18"
+            android:text="@{productEntity.title.toString()}" />
+
+        <TextView
+            android:id="@+id/tv_rv_product_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondaryText"
+            android:layout_marginStart="@dimen/indentation_16"
+            android:layout_marginEnd="@dimen/indentation_16"
+            android:textSize="@dimen/txt_size_14"
+            android:layout_marginBottom="@dimen/indentation_16"
+            android:text="@{productEntity.desc.toString()}"/>
+
+    </LinearLayout>
+</layout>

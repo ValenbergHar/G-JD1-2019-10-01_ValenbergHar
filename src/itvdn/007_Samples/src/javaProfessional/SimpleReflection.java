@@ -22,7 +22,7 @@ public class SimpleReflection {
 
         // 2. String.class
 //        Class<?> cl = SimpleReflection.class;
-//        Class<?> cl2 = int[].class;
+//        Class<?> clя2 = int[].class;
 
         // 3. Class.forName()
 //        Class<?> cl = Class.forName("java.lang.String");

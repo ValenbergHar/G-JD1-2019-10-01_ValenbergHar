@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String s = (char) 27 + "[31m";
+        String s = (char) 27 + "[32m";
         String s1 = (char) 27 + "[39m";
         String s2 = (char) 27 + "[34m";
         // Получаем класс который описывает класс CatMethods

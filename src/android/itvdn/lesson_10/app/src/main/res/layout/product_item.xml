@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="ProductItemBinding">
+        <variable
+            name="productEntity"
+            type="com.kalashnyk.denys.paging.repository.database.entities.ProductEntity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/indentation_10"
+            android:elevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/product_pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                    <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+                        android:id="@+id/product_pager_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="@dimen/indentation_16" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/indentation_10"
+                    android:paddingTop="@dimen/indentation_10"
+                    android:paddingRight="@dimen/indentation_10"
+                    android:textColor="@color/primaryText"
+                    android:text="@{productEntity.title}"
+                    android:textSize="@dimen/txt_size_18" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/indentation_10"
+                    android:paddingRight="@dimen/indentation_10"
+                    android:paddingBottom="@dimen/indentation_5"
+                    android:textColor="@color/accent"
+                    android:text="@{productEntity.price.toString()}"
+                    android:textSize="@dimen/txt_size_12" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="5"
+                    android:text="@{productEntity.desc}"
+                    android:paddingLeft="@dimen/indentation_10"
+                    android:paddingRight="@dimen/indentation_10"
+                    android:paddingBottom="@dimen/indentation_5"
+                    android:textSize="@dimen/txt_size_15" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</layout>
