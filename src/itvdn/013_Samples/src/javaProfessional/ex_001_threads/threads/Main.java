@@ -59,7 +59,7 @@ class EggVoice extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("яйцо!");
+            System.out.println("й!");
         }
     }
 }
