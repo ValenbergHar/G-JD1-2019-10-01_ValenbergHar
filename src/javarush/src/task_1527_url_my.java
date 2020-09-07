@@ -24,5 +24,6 @@ public class task_1527_url_my {
             kv.put(key, value);
         }
         System.out.println(kv);
+        
     }
 }
