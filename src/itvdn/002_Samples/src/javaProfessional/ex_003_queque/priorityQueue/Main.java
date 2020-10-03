@@ -18,8 +18,8 @@ public class Main {
         q.offer(7); // change 7
         q.offer(9); // change 9
         System.out.println(q);
-        q.offer(1); // change 10
-        q.offer(6); // change 11
+        q.offer(10); // change 10
+        q.offer(11); // change 11
         System.out.println(q);
         // Методом poll возвращаем и удаляем головной элемент очереди
         System.out.println(q.poll());
