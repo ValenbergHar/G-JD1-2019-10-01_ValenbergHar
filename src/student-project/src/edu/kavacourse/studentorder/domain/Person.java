@@ -65,4 +65,6 @@ public abstract class  Person {
     public void setPostCode(String postCode) {
         this.postCode = postCode;
     }
+
+    public abstract void setIssueDepartment(String s);
 }

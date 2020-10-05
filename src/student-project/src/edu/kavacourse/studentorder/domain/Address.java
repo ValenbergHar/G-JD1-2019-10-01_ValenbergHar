@@ -5,6 +5,10 @@ public class Address {
     private String building;
     private String apartment;
 
+    public Address(String s, String s1, String s2, String s3, String s4) {
+
+    }
+
     public String getStreet() {
         return street;
     }

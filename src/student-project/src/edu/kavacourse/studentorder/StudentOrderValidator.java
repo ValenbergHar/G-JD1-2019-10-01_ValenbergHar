@@ -1,6 +1,5 @@
-package edu.kavacourse.studentorder.mail;
+package edu.kavacourse.studentorder;
 
-import edu.kavacourse.studentorder.SaveStudentOrder;
 import edu.kavacourse.studentorder.domain.*;
 import edu.kavacourse.studentorder.mail.MailSender;
 import edu.kavacourse.studentorder.validator.ChildrenValidator;
@@ -25,7 +24,8 @@ public class StudentOrderValidator {
 
     public static void main(String[] args) {
         StudentOrderValidator studentOrderValidator = new StudentOrderValidator();
-        //checkAll();
+        studentOrderValidator.checkAll();
+
     }
 
     private void checkAll() {
@@ -36,12 +36,13 @@ public class StudentOrderValidator {
 
     }
 
+
     public void checkOneOrder(StudentOrder so) {
         AnswerCityRegister cityAnswer = checkCityRegister(so);
-        AnswerWedding weddingAnswer = checkWedding(so);
-        AnswerChildren childrenAnswer = checkChildren(so);
-        AnswerStudent studentAnswer = checkStudent(so);
-        mailSender.sendMail(so);
+//        AnswerWedding weddingAnswer = checkWedding(so);
+//        AnswerChildren childrenAnswer = checkChildren(so);
+//        AnswerStudent studentAnswer = checkStudent(so);
+//        mailSender.sendMail(so);
 
     }
 
@@ -65,10 +66,9 @@ public class StudentOrderValidator {
         for (int i = 0; i < soArray.length; i++) {
             soArray[i] = SaveStudentOrder.buildStudentOrder(i);
         }
-        StudentOrder so = new StudentOrder();
+
         return soArray;
     }
-
     public AnswerWedding checkWedding(StudentOrder so) {
         return weddingValidator.checkWedding(so);
     }
@@ -76,7 +76,5 @@ public class StudentOrderValidator {
     public AnswerCityRegister checkCityRegister(StudentOrder so) {
         return cityRegisterValidator.checkCityRegister(so);
     }
-
-
 }
 

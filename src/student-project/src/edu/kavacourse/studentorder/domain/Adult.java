@@ -1,16 +1,20 @@
 package edu.kavacourse.studentorder.domain;
 
 import java.time.LocalDate;
-import java.util.Locale;
 
 public class Adult  extends Person{
     private String passportSeria;
     private String passportNumber;
-    private Locale issueDate;
+    private LocalDate issueDate;
     private String university;
 
     public Adult(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {
         super(surName, givenName, patronymic, dateOfBirth);
+    }
+
+    @Override
+    public void setIssueDepartment(String s) {
+
     }
 
     public String getPassportSeria() {
@@ -29,11 +33,11 @@ public class Adult  extends Person{
         this.passportNumber = passportNumber;
     }
 
-    public Locale getIssueDate() {
+    public LocalDate getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Locale issueDate) {
+    public void setIssueDate(LocalDate issueDate) {
         this.issueDate = issueDate;
     }
 
