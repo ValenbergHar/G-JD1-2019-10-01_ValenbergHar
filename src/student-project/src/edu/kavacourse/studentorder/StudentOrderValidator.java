@@ -7,6 +7,9 @@ import edu.kavacourse.studentorder.validator.CityRegisterValidator;
 import edu.kavacourse.studentorder.validator.StudentValidator;
 import edu.kavacourse.studentorder.validator.WeddingValidator;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class StudentOrderValidator {
     private CityRegisterValidator cityRegisterValidator;
     private WeddingValidator weddingValidator;
@@ -29,11 +32,10 @@ public class StudentOrderValidator {
     }
 
     private void checkAll() {
-        StudentOrder[] soArray = readStudentOrder();
-        for (int i = 0; i < soArray.length; i++) {
-            checkOneOrder(soArray[i]);
+        List<StudentOrder> soList = readStudentOrder();
+        for (StudentOrder so : soList) {
+            checkOneOrder(so);
         }
-
     }
 
 
@@ -61,14 +63,16 @@ public class StudentOrderValidator {
         return childrenVal.checkChildren(so);
     }
 
-    public static StudentOrder[] readStudentOrder() {
-        StudentOrder[] soArray = new StudentOrder[3];
-        for (int i = 0; i < soArray.length; i++) {
-            soArray[i] = SaveStudentOrder.buildStudentOrder(i);
+    public static List<StudentOrder> readStudentOrder() {
+        List<StudentOrder> soList = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            StudentOrder so = new SaveStudentOrder().buildStudentOrder(i);
+            soList.add(so);
         }
 
-        return soArray;
+        return soList;
     }
+
     public AnswerWedding checkWedding(StudentOrder so) {
         return weddingValidator.checkWedding(so);
     }

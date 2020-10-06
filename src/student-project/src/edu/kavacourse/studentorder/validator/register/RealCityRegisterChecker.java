@@ -1,8 +1,6 @@
-package edu.kavacourse.studentorder.validator;
+package edu.kavacourse.studentorder.validator.register;
 
-import edu.kavacourse.studentorder.domain.Adult;
-import edu.kavacourse.studentorder.domain.Child;
-import edu.kavacourse.studentorder.domain.CityRegisterCheckerResponse;
+import edu.kavacourse.studentorder.register.CityRegisterCheckerResponse;
 import edu.kavacourse.studentorder.domain.Person;
 import edu.kavacourse.studentorder.exception.CityRegisterException;
 

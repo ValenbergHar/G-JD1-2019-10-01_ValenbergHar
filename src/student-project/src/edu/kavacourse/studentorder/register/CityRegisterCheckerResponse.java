@@ -1,4 +1,4 @@
-package edu.kavacourse.studentorder.domain;
+package edu.kavacourse.studentorder.register;
 
 public class CityRegisterCheckerResponse {
     boolean existing;
