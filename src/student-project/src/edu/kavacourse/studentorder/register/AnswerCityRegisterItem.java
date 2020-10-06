@@ -15,6 +15,7 @@ public class AnswerCityRegisterItem {
             this.text = text;
         }
 
+
         public String getCode() {
             return code;
         }

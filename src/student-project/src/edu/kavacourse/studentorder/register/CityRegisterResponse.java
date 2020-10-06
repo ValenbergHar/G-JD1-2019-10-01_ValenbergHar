@@ -1,6 +1,6 @@
 package edu.kavacourse.studentorder.register;
 
-public class CityRegisterCheckerResponse {
+public class CityRegisterResponse {
     boolean existing;
     Boolean temporal;
 
