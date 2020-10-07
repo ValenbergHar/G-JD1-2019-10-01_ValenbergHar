@@ -41,6 +41,7 @@ public class FakeCityRegisterChecker implements CityRegisterChecker
                 TransportException ex = new TransportException("Fake ERROR " + ps);
                 throw ex;
             }
+
         }
 
         if(person instanceof Child) {
