@@ -117,13 +117,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Install/postgresql-42.2.16.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -131,7 +134,20 @@
       <recent name="edu.kavacourse.studentorder.validator" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SaveStudentOrder">
+    <configuration name="SaveStudentOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.kavacourse.studentorder.SaveStudentOrder" />
+      <module name="student-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.kavacourse.studentorder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentOrderValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.kavacourse.studentorder.StudentOrderValidator" />
       <module name="student-project" />
@@ -141,6 +157,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SaveStudentOrder" />
         <item itemvalue="Application.StudentOrderValidator" />
       </list>
     </recent_temporary>
@@ -165,6 +182,7 @@
       <workItem from="1602061069193" duration="3724000" />
       <workItem from="1602136502743" duration="4224000" />
       <workItem from="1602186214428" duration="1061000" />
+      <workItem from="1602222868016" duration="14370000" />
     </task>
     <servers />
   </component>
@@ -184,31 +202,39 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="896" y="98" width="390" height="520" key="#com.intellij.ide.util.MemberChooser" timestamp="1602008000519">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1072" y="130" width="390" height="520" key="#com.intellij.ide.util.MemberChooser" timestamp="1602251487358">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="896" y="98" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602008000519" />
-    <state x="1107" y="130" width="390" height="520" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1601989007827" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1602074007678">
+    <state x="1072" y="130" width="390" height="520" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602251487358" />
+    <state x="449" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602251448999">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="449" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602251448999" />
+    <state x="734" y="248" key="FileChooserDialogImpl" timestamp="1602230299790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="734" y="248" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602230299790" />
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1602251590692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="843" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601746376276" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602074007678" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1602074007678">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602251590692" />
+    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1602251590692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="843" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601746376276" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602074007678" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1602074007678">
+    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602251590692" />
+    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1602251590692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="843" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601746376276" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602074007678" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1602074007678">
+    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602251590692" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1602251590692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="843" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601746376276" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602074007678" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602251590692" />
     <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1602074007678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,6 +251,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602074007678" />
+    <state x="440" y="93" key="SettingsEditor" timestamp="1602230318762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="93" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1080@0.0.1920.1040" timestamp="1602230318762" />
     <state x="666" y="321" key="refactoring.ChangeSignatureDialog" timestamp="1601895424780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,27 +1,59 @@
 package edu.kavacourse.studentorder;
 
-import edu.kavacourse.studentorder.domain.Address;
-import edu.kavacourse.studentorder.domain.Adult;
-import edu.kavacourse.studentorder.domain.Child;
-import edu.kavacourse.studentorder.domain.StudentOrder;
-import sun.util.resources.LocaleData;
+import edu.kavacourse.studentorder.dao.DirectoryDao;
+import edu.kavacourse.studentorder.dao.DirectoryDaoImpl;
+import edu.kavacourse.studentorder.domain.*;
 
 import java.time.LocalDate;
-import java.util.Locale;
+import java.util.List;
 
-public class SaveStudentOrder
-{
-    public static void main(String[] args) {
-        StudentOrder s = buildStudentOrder(10);
+public class SaveStudentOrder {
+    public static void main(String[] args) throws Exception {
+//        Class.forName("org.postgresql.Driver");
+//        Connection con = DriverManager.getConnection(
+//                "jdbc:postgresql://localhost:5432/jc_student",
+//                "postgres", "1234");
+//        Statement stmt = con.createStatement();
+//        ResultSet rs = stmt.executeQuery("SELECT * FROM jc_street");
+        List<Street> d = new DirectoryDaoImpl().findStreets("d");
+        for (Street s: d) {
+            System.out.println(s.getStreetName());
+        }
+
+//        while (rs.next()) {
+//            System.out.println(rs.getLong(1) + " : " + rs.getString(2));
+//        }
+//        Statement stmt = con.createStatement();
+//        ResultSet rs = stmt.executeQuery("SELECT * FROM jc_student");
+//        while(rs.next()){
+//
+//            System.out.println(rs.getLong(1) +" : " + rs.getString(2));
+//        }
+
+
+//        Class.forName("org.postgresql.Driver");
+//        Connection con = DriverManager.getConnection(
+//                "jdbc:postgresql://localhost:5432/jc_student",
+//                "postgres", "postgres");
+//
+//        Statement stmt = con.createStatement();
+//        ResultSet rs = stmt.executeQuery("SELECT * FROM jc_street");
+//        while(rs.next()) {
+//            System.out.println(rs.getLong(1) + " : " + rs.getString(2));
+//        }
+
+        //      StudentOrder s = buildStudentOrder(10);
 //        StudentOrder so = new StudentOrder();
 //        long ans = saveStudentOrder(so);
 //        System.out.println(ans);
     }
+
     static long saveStudentOrder(StudentOrder studentOrder) {
         long answer = 199;
         System.out.println("saveStudentOrder");
         return answer;
     }
+
     public static StudentOrder buildStudentOrder(long id) {
         StudentOrder so = new StudentOrder();
         so.setStudentOrderId(id);
@@ -30,9 +62,8 @@ public class SaveStudentOrder
         so.setMarriageDate(LocalDate.of(2016, 7, 4));
         so.setMarriageOffice("Отдел ЗАГС");
 
-
-    Address address = new Address("195000", "Заневский пр.", "12", "", "142");
-
+        Street street = new Street(1L, "First Street");
+        Address address = new Address("195000", street, "12", "", "142");
 
         // Муж
         Adult husband = new Adult("Петров", "Виктор", "Сергеевич", LocalDate.of(1997, 8, 24));

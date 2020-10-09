@@ -1,19 +1,33 @@
 package edu.kavacourse.studentorder.domain;
 
 public class Address {
-    private String street;
+    private String postCode;
+    private Street street;
     private String building;
+    private String extention;
     private String apartment;
 
-    public Address(String s, String s1, String s2, String s3, String s4) {
-
+    public Address(String postCode, Street street, String building, String extention, String apartment) {
+        this.postCode = postCode;
+        this.street = street;
+        this.building = building;
+        this.extention = extention;
+        this.apartment = apartment;
     }
 
-    public String getStreet() {
+    public String getPostCode() {
+        return postCode;
+    }
+
+    public void setPostCode(String postCode) {
+        this.postCode = postCode;
+    }
+
+    public Street getStreet() {
         return street;
     }
 
-    public void setStreet(String street) {
+    public void setStreet(Street street) {
         this.street = street;
     }
 
@@ -23,6 +37,14 @@ public class Address {
 
     public void setBuilding(String building) {
         this.building = building;
+    }
+
+    public String getExtention() {
+        return extention;
+    }
+
+    public void setExtention(String extention) {
+        this.extention = extention;
     }
 
     public String getApartment() {
