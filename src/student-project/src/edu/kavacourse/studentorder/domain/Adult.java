@@ -7,15 +7,23 @@ public class Adult  extends Person{
     private String passportNumber;
     private LocalDate issueDate;
     private String university;
+    private PassportOffice issueDepartment;
+
+    public PassportOffice getIssueDepartment() {
+        return issueDepartment;
+    }
+
+    public void setIssueDepartment(PassportOffice issueDepartment) {
+        this.issueDepartment = issueDepartment;
+    }
+
+
 
     public Adult(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {
         super(surName, givenName, patronymic, dateOfBirth);
     }
 
-    @Override
-    public void setIssueDepartment(String s) {
 
-    }
 
     public String getPassportSeria() {
         return passportSeria;

@@ -39,11 +39,11 @@ public class Address {
         this.building = building;
     }
 
-    public String getExtention() {
+    public String getExtension() {
         return extention;
     }
 
-    public void setExtention(String extention) {
+    public void setExtension(String extention) {
         this.extention = extention;
     }
 
@@ -54,4 +54,6 @@ public class Address {
     public void setApartment(String apartment) {
         this.apartment = apartment;
     }
+
+
 }
