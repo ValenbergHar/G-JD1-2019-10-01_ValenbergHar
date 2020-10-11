@@ -27,6 +27,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,10 +41,26 @@
       <updated>1602165196543</updated>
       <workItem from="1602165197769" duration="376000" />
       <workItem from="1602178514931" duration="1637000" />
+      <workItem from="1602356093148" duration="601000" />
+      <workItem from="1602410298494" duration="3372000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602410911221">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1602410911221" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1602410896947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1602410896947" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602410864075">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.32.1323.1050@0.0.1536.824" timestamp="1602410864075" />
   </component>
 </project>
